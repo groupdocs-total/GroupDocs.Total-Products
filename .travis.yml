@@ -25,7 +25,9 @@ install:
 script:
 - cp -r english $ROOT_DIR/content/
 - ls common
-- hugo --source common --minify
+- ls $ROOT_DIR/content/
+- hugo --source $ROOT_DIR --minify
+- ls $SRC_DIR
 - ls $SRC_DIR/$PRODUCT
 
 after_success:
