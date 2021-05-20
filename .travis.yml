@@ -25,8 +25,8 @@ install:
 
 script:
 - cp -r english $ROOT_DIR/content/
-- cd common
-- hugo --minify
+- ls common
+- hugo --source common --minify
 
 after_success:
 - scp -i ./deploy_key -r $SRC_DIR/$PRODUCT $USER@$HOST:$DEST_DIR
