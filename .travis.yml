@@ -1,6 +1,10 @@
 git:
   submodules: false
   
+branches:
+  only:
+  - master
+  
 env:
   global:
     - PRODUCT=total
@@ -13,7 +17,7 @@ before_install:
   -in deploy_key.enc -out ./deploy_key -d
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
-- git submodule update --remote --merge
+- git submodule foreach git pull origin master
 - eval "$(ssh-agent -s)"
 - chmod 600 ./deploy_key
 - echo -e "Host $HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
