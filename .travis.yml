@@ -26,6 +26,7 @@ script:
 - cp -r english $ROOT_DIR/content/
 - ls common
 - hugo --source common --minify
+- ls $SRC_DIR/$PRODUCT
 
 after_success:
 - scp -i ./deploy_key -r $SRC_DIR/$PRODUCT $USER@$HOST:$DEST_DIR
