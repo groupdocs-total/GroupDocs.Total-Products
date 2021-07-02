@@ -1,16 +1,16 @@
 ---
 ############################# Static ############################
 layout: "auto-gen"
-date: 2021-05-13T14:22:14+03:00
+date: 2021-06-29T14:22:14+03:00
 draft: false
 
 ############################# Head ############################
-head_title: "Add PNG image watermark to Word DOCX in C# .NET"
-head_description: "C# .NET API to add PNG image watermark into Word processing documents (DOCX) and 90+ other file formats using GroupDocs.Total suite of documents automation APIs."
+head_title: "Add GIF Image Watermark to Word DOCX in C# .NET"
+head_description: "C# .NET API to add GIF image watermark into Word processing documents (DOCX) and 90+ other file formats using GroupDocs.Total suite of documents automation APIs."
 
 ############################# Header ############################
-title: "Add PNG Image Watermark to DOCX in .NET"
-description: "Insert PNG or any image watermark into Word processing document formats quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
+title: "Add GIF Image Watermark to DOCX in .NET"
+description: "Insert GIF or any image watermark into Word processing document formats quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -67,7 +67,7 @@ steps:
     enable: true
     title_left: "Adding image watermark to Word file in .NET"
     content_left: |
-        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate PNG image watermark into Word documents using a few lines of C# .NET code.
+        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate GIF image watermark into Word documents using a few lines of C# .NET code.
 
         *   Create instance of HtmlViewOptions class (or PngViewOptions, or JpgViewOption, or PdfViewOptions);
         *   Create an image watermark from the local image file
@@ -90,7 +90,7 @@ steps:
         {
           HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
 
-          using (ImageWatermark watermark = new ImageWatermark("logo.png"))
+          using (ImageWatermark watermark = new ImageWatermark("logo.gif"))
           {
             watermark.HorizontalAlignment = HorizontalAlignment.Center;
             watermark.VerticalAlignment = VerticalAlignment.Center;
