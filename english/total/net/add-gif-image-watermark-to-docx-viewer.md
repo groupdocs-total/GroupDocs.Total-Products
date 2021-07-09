@@ -69,11 +69,12 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate GIF image watermark into Word documents using a few lines of C# .NET code.
 
-        *   Create instance of HtmlViewOptions class (or PngViewOptions, or JpgViewOption, or PdfViewOptions);
-        *   Create an image watermark from the local image file
+        *   Instantiate watermarker with input document
+        *   Use watermark image path as constructor parameter
         *   Set the watermark horizontal and vertical alignments
-        *   Assign Watermark object to HtmlViewOptions.Watermark (or PngViewOptions.Watermark, or JpgViewOptions.Watermark, or PdfViewOptions.Watermark) property;
-        *   Call View method
+        *   Add watermark to the watermarker and generate output document
+        *   Instantiate viewer with output document
+        *   Set options to view document as HTML
         
     title_right: "System Requirements"
     content_right: |
@@ -86,19 +87,31 @@ steps:
         
     code: |
         ```cs
-        using (Viewer viewer = new Viewer("sample.docx"))
-        {
-          HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
-
-          using (ImageWatermark watermark = new ImageWatermark("logo.gif"))
+        // Instantiate watermarker with input document
+        using (Watermarker watermarker = new Watermarker("input.docx"))
           {
-            watermark.HorizontalAlignment = HorizontalAlignment.Center;
-            watermark.VerticalAlignment = VerticalAlignment.Center;
-            viewOptions.Watermark = watermark;
+            // Use watermark image path as constructor parameter
+            using (ImageWatermark watermark = new ImageWatermark(@"watermark.gif"))
+            {
+              // Set watermark size and alignment
+              watermark.Width = 150;
+              watermark.Height = 150;
+              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
+              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+
+              //Add watermark to the watermarker and generate output document
+              watermarker.Add(watermark);
+              watermarker.Save("output.docx");
+            }
           }
-          
-          viewer.View(viewOptions);
-        }
+        
+        // Instantiate viewer with output document
+        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.docx"))
+          {
+            // Set options to view document as HTML
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            viewer.View(options);
+          }
         ```
         
 ############################# Demos ############################
@@ -114,12 +127,12 @@ about_formats:
     enable: true
     format:
         # format loop
-        - icon: "far fa-file-DOCX"
-          title: " About Word Processing File Formats"
+        - icon: "far fa-file-word-o"
+          title: " About Word DOCX File Format"
           content: |
-            A word processing file contains user information in plain text or rich text format. A plain text file format contains unformatted text and no font or page settings etc. can be applied. In contrast, a rich text file format allows formatting options such as setting fonts type, styles (bold, italic, underline, etc.), page margins, headings, bullets and numbers, and several other formatting features. The use of plain text files have reduced significantly with passage of time as there are more powerful computers and programs available to offer rich text files processing.Common plain text file extensions and associated file formats include TXT, CSV, while file extensions for rich text documents include DOCX, DOC and RTF.
+            DOCX is a well-known format for Microsoft Word documents. Introduced from 2007 with the release of Microsoft Office 2007, the structure of this new Document format was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word which support DOC file extensions.
 
-          link: "https://docs.fileformat.com/word-processing/"
+          link: "https://docs.fileformat.com/word-processing/docx/"
     
 ############################# Support ############################
 support:

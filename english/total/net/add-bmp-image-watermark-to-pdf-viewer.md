@@ -69,11 +69,12 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate BMP image watermark into PDF Viewer applications using a few lines of C# .NET code.
 
-        *   Create instance of HtmlViewOptions class (or PngViewOptions, or JpgViewOption, or PdfViewOptions);
-        *   Create an image watermark from the local image file
+        *   Instantiate watermarker with input document
+        *   Use watermark image path as constructor parameter
         *   Set the watermark horizontal and vertical alignments
-        *   Assign Watermark object to HtmlViewOptions.Watermark (or PngViewOptions.Watermark, or JpgViewOptions.Watermark, or PdfViewOptions.Watermark) property;
-        *   Call View method
+        *   Add watermark to the watermarker and generate output document
+        *   Instantiate viewer with output document
+        *   Set options to view document as HTML
         
     title_right: "System Requirements"
     content_right: |
@@ -86,19 +87,31 @@ steps:
         
     code: |
         ```cs
-        using (Viewer viewer = new Viewer("sample.pdf"))
-        {
-          HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
-
-          using (ImageWatermark watermark = new ImageWatermark("logo.bmp"))
+        // Instantiate watermarker with input document
+        using (Watermarker watermarker = new Watermarker("input.pdf"))
           {
-            watermark.HorizontalAlignment = HorizontalAlignment.Center;
-            watermark.VerticalAlignment = VerticalAlignment.Center;
-            viewOptions.Watermark = watermark;
+            // Use watermark image path as constructor parameter
+            using (ImageWatermark watermark = new ImageWatermark(@"watermark.bmp"))
+            {
+              // Set watermark size and alignment
+              watermark.Width = 150;
+              watermark.Height = 150;
+              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
+              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+
+              //Add watermark to the watermarker and generate output document
+              watermarker.Add(watermark);
+              watermarker.Save("output.pdf");
+            }
           }
-          
-          viewer.View(viewOptions);
-        }
+        
+        // Instantiate viewer with output document
+        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.pdf"))
+          {
+            // Set options to view document as HTML
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            viewer.View(options);
+          }
         ```
         
 ############################# Demos ############################
