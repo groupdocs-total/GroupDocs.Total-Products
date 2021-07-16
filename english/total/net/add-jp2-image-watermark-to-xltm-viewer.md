@@ -5,12 +5,12 @@ date: 2021-06-29T14:22:14+03:00
 draft: false
 
 ############################# Head ############################
-head_title: "Add PNG Image Watermark to PDF Viewer in C# .NET"
-head_description: "C# .NET API to add PNG image watermark into PDF Viewer documents and 170+ other file formats using GroupDocs.Total suite of documents automation APIs."
+head_title: "Add JP2 Image Watermark to XLTM Viewer in C# .NET"
+head_description: "C# .NET API to add JP2 image watermark into Excel spreadsheet (XLTM) formats and 100+ other file formats using GroupDocs.Total suite of documents automation APIs."
 
 ############################# Header ############################
-title: "Add PNG Image Watermark to PDF Viewer"
-description: "Insert PNG or any image watermark into PDF Viewer documents quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
+title: "Add JP2 Image Watermark to XLTM Viewer"
+description: "Insert JP2 or any other image watermark into Excel spreadsheet (XLTM) formats quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -65,15 +65,15 @@ about:
 ############################# Steps ############################
 steps:
     enable: true
-    title_left: "Adding image watermark to PDF file in .NET"
+    title_left: "Adding image watermark to XLTM file in .NET"
     content_left: |
-        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate PNG image watermark into PDF Viewer applications using a few lines of C# .NET code.
+        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate JP2 image watermark into Excel worksheets using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input document
-        *   Use watermark image path as constructor parameter
-        *   Set the watermark horizontal and vertical alignments
+        *   Instantiate watermarker with input XLTM document
+        *   Use JP2 watermark image path as constructor parameter of ImageWatermark class
+        *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
-        *   Instantiate viewer with output document
+        *   Instantiate Viewer with output document
         *   Set options to view document as HTML
         
     title_right: "System Requirements"
@@ -87,29 +87,31 @@ steps:
         
     code: |
         ```cs
-        // Instantiate watermarker with input document
-        using (Watermarker watermarker = new Watermarker("input.pdf"))
+        // Add watermark to XLTM file using GroupDocs.Watermark API
+        // Instantiate Watermarker with input XLTM document
+        using (Watermarker watermarker = new Watermarker("input.xltm"))
           {
-            // Use watermark image path as constructor parameter
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.png"))
+            // Use JP2 watermark image path as constructor parameter of ImageWatermark class
+            using (ImageWatermark watermark = new ImageWatermark(@"watermark.jp2"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
               watermark.Height = 150;
-              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
-              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+              watermark.HorizontalAlignment = HorizontalAlignment.Right;
+              watermark.VerticalAlignment = VerticalAlignment.Top;
 
               //Add watermark to the watermarker and generate output document
               watermarker.Add(watermark);
-              watermarker.Save("output.pdf");
+              watermarker.Save("output.xltm");
             }
           }
         
-        // Instantiate viewer with output document
-        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.pdf"))
+        // View watermarked XLTM file using GroupDocs.Viewer API
+        // Instantiate Viewer with output document
+        using (Viewer viewer = new Viewer("output.xltm"))
           {
             // Set options to view document as HTML
-            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output{0}.html");
             viewer.View(options);
           }
         ```
@@ -127,12 +129,12 @@ about_formats:
     enable: true
     format:
         # format loop
-        - icon: "far fa-file-pdf"
-          title: " About PDF File Format"
+        - icon: "far fa-file-excel-o"
+          title: " About XLTM File Format"
           content: |
-            Portable Document Format (PDF) is a type of document created by Adobe back in 1990s. The purpose of this file format was to introduce a standard for representation of documents and other reference material in a format that is independent of application software, hardware as well as Operating System. The PDF file format has full capability to contain information like text, images, hyperlinks, form-fields, rich media, digital signatures, attachments, metadata, Geospatial features and 3D objects in it that can become as part of source document. In most of the cases, existing documents are converted to PDF rather than creating a new PDF from scratch. But that doesn’t mean there are no software for creation or manipulation of PDF files.
+            The XLTM file extension represents files that are generated by Microsoft Excel as Macro-enabled template files. XLTM files are similar to XLTX in structure other than that the later doesn’t support creating template files with macros. Such template files are used to generate and set the layout, formatting, and other settings along with the macros to facilitate creating similar XLSX files then.
 
-          link: "https://docs.fileformat.com/pdf/"
+          link: "https://docs.fileformat.com/spreadsheet/xltm/"
     
 ############################# Support ############################
 support:

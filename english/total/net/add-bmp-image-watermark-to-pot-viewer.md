@@ -5,12 +5,12 @@ date: 2021-06-29T14:22:14+03:00
 draft: false
 
 ############################# Head ############################
-head_title: "Add PNG Image Watermark to PDF Viewer in C# .NET"
-head_description: "C# .NET API to add PNG image watermark into PDF Viewer documents and 170+ other file formats using GroupDocs.Total suite of documents automation APIs."
+head_title: "Add BMP Image Watermark to POT Viewer in C# .NET"
+head_description: "C# .NET API to add BMP image watermark into PowerPoint template (POT) and 100+ other file formats using GroupDocs.Total suite of documents automation APIs."
 
 ############################# Header ############################
-title: "Add PNG Image Watermark to PDF Viewer"
-description: "Insert PNG or any image watermark into PDF Viewer documents quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
+title: "Add BMP Image Watermark to POT Viewer"
+description: "Insert BMP or any other image watermark into PowerPoint template (POT) files quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
 button:
@@ -65,15 +65,15 @@ about:
 ############################# Steps ############################
 steps:
     enable: true
-    title_left: "Adding image watermark to PDF file in .NET"
+    title_left: "Adding image watermark to POT file in .NET"
     content_left: |
-        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate PNG image watermark into PDF Viewer applications using a few lines of C# .NET code.
+        [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate BMP image watermark into PowerPoint template (POT) file format using a few lines of .NET code.
 
-        *   Instantiate watermarker with input document
-        *   Use watermark image path as constructor parameter
-        *   Set the watermark horizontal and vertical alignments
+        *   Instantiate watermarker with input POT document
+        *   Use BMP watermark image path as constructor parameter of ImageWatermark class
+        *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
-        *   Instantiate viewer with output document
+        *   Instantiate Viewer with output document
         *   Set options to view document as HTML
         
     title_right: "System Requirements"
@@ -87,29 +87,31 @@ steps:
         
     code: |
         ```cs
-        // Instantiate watermarker with input document
-        using (Watermarker watermarker = new Watermarker("input.pdf"))
+        // Add watermark to POT file using GroupDocs.Watermark API
+        // Instantiate Watermarker with input POT document
+        using (Watermarker watermarker = new Watermarker("input.pot"))
           {
-            // Use watermark image path as constructor parameter
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.png"))
+            // Use BMP watermark image path as constructor parameter of ImageWatermark class
+            using (ImageWatermark watermark = new ImageWatermark(@"watermark.bmp"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
               watermark.Height = 150;
-              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
-              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+              watermark.HorizontalAlignment = HorizontalAlignment.Right;
+              watermark.VerticalAlignment = VerticalAlignment.Top;
 
               //Add watermark to the watermarker and generate output document
               watermarker.Add(watermark);
-              watermarker.Save("output.pdf");
+              watermarker.Save("output.pot");
             }
           }
         
-        // Instantiate viewer with output document
-        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.pdf"))
+        // View watermarked POT file using GroupDocs.Viewer API
+        // Instantiate Viewer with output document
+        using (Viewer viewer = new Viewer("output.pot"))
           {
             // Set options to view document as HTML
-            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output{0}.html");
             viewer.View(options);
           }
         ```
@@ -127,12 +129,12 @@ about_formats:
     enable: true
     format:
         # format loop
-        - icon: "far fa-file-pdf"
-          title: " About PDF File Format"
+        - icon: "far fa-file-powerpoint-o"
+          title: " About POT File Format"
           content: |
-            Portable Document Format (PDF) is a type of document created by Adobe back in 1990s. The purpose of this file format was to introduce a standard for representation of documents and other reference material in a format that is independent of application software, hardware as well as Operating System. The PDF file format has full capability to contain information like text, images, hyperlinks, form-fields, rich media, digital signatures, attachments, metadata, Geospatial features and 3D objects in it that can become as part of source document. In most of the cases, existing documents are converted to PDF rather than creating a new PDF from scratch. But that doesn’t mean there are no software for creation or manipulation of PDF files.
+            Files with .POT extension represent Microsoft PowerPoint template files created by PowerPoint 97-2003 versions. Files created with these versions of Microsoft PowerPoint are in binary format as compared to those created in Office OpenXML file formats using the higher versions of PowerPoint. The files, hence, generated can be used to create presentations that have same layout and other settings required to be applied to new files. These settings can include styles, backgrounds, colour palette, fonts and defaults. Such files are generated in order to create ready-to-use template files for official use.
 
-          link: "https://docs.fileformat.com/pdf/"
+          link: "https://docs.fileformat.com/presentation/pot/"
     
 ############################# Support ############################
 support:

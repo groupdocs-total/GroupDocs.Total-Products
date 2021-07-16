@@ -9,7 +9,7 @@ head_title: "Add PNG image watermark to Word DOCX in C# .NET"
 head_description: "C# .NET API to add PNG image watermark into Word processing documents (DOCX) and 90+ other file formats using GroupDocs.Total suite of documents automation APIs."
 
 ############################# Header ############################
-title: "Add PNG Image Watermark to DOCX in .NET"
+title: "Add PNG Image Watermark to DOCX Viewer"
 description: "Insert PNG or any image watermark into Word processing document formats quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false

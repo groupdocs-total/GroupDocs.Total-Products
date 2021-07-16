@@ -9,7 +9,7 @@ head_title: "Add BMP Image Watermark to PDF Viewer in C# .NET"
 head_description: "C# .NET API to add BMP image watermark into PDF Viewer documents and 170+ other file formats using GroupDocs.Total suite of documents automation APIs."
 
 ############################# Header ############################
-title: "Add BMP Image Watermark to PDF in .NET"
+title: "Add BMP Image Watermark to PDF Viewer"
 description: "Insert BMP or any image watermark into PDF Viewer documents quite easily and accurately using GroupDocs.Total suite of documents automation APIs for C# .NET applications."
 bg_image: "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/bg/header1.png"
 bg_overlay: false
