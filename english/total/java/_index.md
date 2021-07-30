@@ -77,8 +77,6 @@ products:
           name: "GroupDocs.Viewer for Java"
           content: |
             A powerful document viewer API that allows you to display over 50 document formats in your Java applications. The viewer can work two ways: by rasterizing documents or by converting them to a combination of SVG, HTML, and CSS. Both methods deliver high-fidelity rendering.  
-              
-            Supported file formats include Microsoft Office, Visio, Project and Outlook documents, PDFs, AutoCAD, image files (TIFF, JPG, BMP, GIF, TIFF, etc.) and more.
           link: "/viewer/java"
 
         # product loop
