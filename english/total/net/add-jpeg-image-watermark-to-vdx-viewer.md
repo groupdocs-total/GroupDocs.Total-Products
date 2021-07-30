@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate JPEG image watermark into Microsoft Visio Drawing XML documents (VDX) using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input VDX file
+        *   Instantiate Watermarker with input VDX file
         *   Use JPEG watermark image path as constructor parameter of ImageWatermark class
         *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
@@ -92,7 +92,7 @@ steps:
         using (Watermarker watermarker = new Watermarker("input.vdx"))
           {
             // Use JPEG watermark image path as constructor parameter of ImageWatermark class
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.jpeg"))
+            using (ImageWatermark watermark = new ImageWatermark("watermark.jpeg"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
