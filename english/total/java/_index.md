@@ -44,10 +44,6 @@ submenu:
             text: "Features"
 
           # button loop
-          - link: "#support"
-            text: "Support"
-
-          # button loop
           - link: "https://purchase.groupdocs.com/pricing/total/java"
             text: "Pricing"
 
