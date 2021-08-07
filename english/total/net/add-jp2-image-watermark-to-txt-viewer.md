@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate JP2 image watermark into TXT document file using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input document
+        *   Instantiate Watermarker with input document
         *   Use watermark image path as constructor parameter
         *   Set the watermark horizontal and vertical alignments
         *   Add watermark to the watermarker and generate output document
@@ -87,17 +87,18 @@ steps:
         
     code: |
         ```cs
-        // Instantiate watermarker with input document
+        // Add watermark to Plain Text (TXT) file using GroupDocs.Watermark API
+        // Instantiate Watermarker with input TXT document
         using (Watermarker watermarker = new Watermarker("input.txt"))
           {
-            // Use watermark image path as constructor parameter
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.jp2"))
+            // Use JP2 watermark image path as constructor parameter of ImageWatermark class
+            using (ImageWatermark watermark = new ImageWatermark("watermark.jp2"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
               watermark.Height = 150;
-              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
-              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+              watermark.HorizontalAlignment = HorizontalAlignment.Right;
+              watermark.VerticalAlignment = VerticalAlignment.Top;
 
               //Add watermark to the watermarker and generate output document
               watermarker.Add(watermark);
@@ -105,11 +106,13 @@ steps:
             }
           }
         
-        // Instantiate viewer with output document
-        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.txt"))
+        // View watermarked TXT file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
+        // Instantiate Viewer with output document
+        using (Viewer viewer = new Viewer("output.txt"))
           {
             // Set options to view document as HTML
-            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output{0}.html");
             viewer.View(options);
           }
         ```

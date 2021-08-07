@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate BMP image watermark into Word (DOCM) documents using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input DOCM document
+        *   Instantiate Watermarker with input DOCM document
         *   Use BMP watermark image path as constructor parameter of ImageWatermark class
         *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
@@ -87,12 +87,12 @@ steps:
         
     code: |
         ```cs
-        // Add watermark to DOCM file using GroupDocs.Watermark API
+        // Add watermark to Word Processing (DOCM) file using GroupDocs.Watermark API
         // Instantiate Watermarker with input DOCM document
         using (Watermarker watermarker = new Watermarker("input.docm"))
           {
             // Use BMP watermark image path as constructor parameter of ImageWatermark class
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.bmp"))
+            using (ImageWatermark watermark = new ImageWatermark("watermark.bmp"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
@@ -107,6 +107,7 @@ steps:
           }
         
         // View watermarked DOCM file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
         // Instantiate Viewer with output document
         using (Viewer viewer = new Viewer("output.docm"))
           {

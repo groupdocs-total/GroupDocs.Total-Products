@@ -107,6 +107,7 @@ steps:
           }
         
         // View watermarked EML file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
         // Instantiate Viewer with output document
         using (Viewer viewer = new Viewer("output.eml"))
           {

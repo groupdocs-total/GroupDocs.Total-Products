@@ -107,6 +107,7 @@ steps:
           }
         
         // View watermarked XPS file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
         // Instantiate Viewer with output document
         using (Viewer viewer = new Viewer("output.xps"))
           {
@@ -141,103 +142,100 @@ support:
     enable: true
 
 ############################# Solutions ############################
-solutions:
+more_formats:
     enable: true
     title: "GroupDocs.Total for .NET offers individual solutions for"
 
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Viewer for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-net.png"
-          product: "GroupDocs.Viewer"
-          platform: ".NET"
+    format:
+        # format loop
+        - name: "GroupDocs.Viewer for .NET"          
           link: "/viewer/net"
         
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Annotation for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
           product: "GroupDocs.Annotation"
           platform: ".NET"
           link: "/annotation/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Conversion for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
           product: "GroupDocs.Conversion"
           platform: ".NET"
           link: "/conversion/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Comparison for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
           product: "GroupDocs.Comparison"
           platform: ".NET"
           link: "/comparison/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Signature for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
           product: "GroupDocs.Signature"
           platform: ".NET"
           link: "/signature/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Assembly for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
           product: "GroupDocs.Assembly"
           platform: ".NET"
           link: "/assembly/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Metadata for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
           product: "GroupDocs.Metadata"
           platform: ".NET"
           link: "/metadata/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Search for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
           product: "GroupDocs.Search"
           platform: ".NET"
           link: "/search/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Parser for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
           product: "GroupDocs.Parser"
           platform: ".NET"
           link: "/parser/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Watermark for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
           product: "GroupDocs.Watermark"
           platform: ".NET"
           link: "/watermark/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Editor for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
           link: "/editor/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Merger for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
           product: "GroupDocs.Merger"
           platform: ".NET"
           link: "/merger/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Redaction for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-net.png"
           product: "GroupDocs.Redaction"
           platform: ".NET"
           link: "/redaction/net"
 
-        # solution loop
+        # format loop
         - img_alt: "GroupDocs.Classification for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
           product: "GroupDocs.Classification"

@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate PNG image watermark into PowerPoint presentation (PPT) file format using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input document
+        *   Instantiate Watermarker with input document
         *   Use watermark image path as constructor parameter
         *   Set the watermark horizontal and vertical alignments
         *   Add watermark to the watermarker and generate output document
@@ -87,17 +87,18 @@ steps:
         
     code: |
         ```cs
-        // Instantiate watermarker with input document
+        // Add watermark to the input file using GroupDocs.Watermark API
+        // Instantiate Watermarker with input document
         using (Watermarker watermarker = new Watermarker("input.ppt"))
           {
-            // Use watermark image path as constructor parameter
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.png"))
+            // Use watermark image path as constructor parameter of ImageWatermark class
+            using (ImageWatermark watermark = new ImageWatermark("watermark.png"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
               watermark.Height = 150;
-              watermark.HorizontalAlignment = GroupDocs.Watermark.Common.HorizontalAlignment.Right;
-              watermark.VerticalAlignment = GroupDocs.Watermark.Common.VerticalAlignment.Top;
+              watermark.HorizontalAlignment = HorizontalAlignment.Right;
+              watermark.VerticalAlignment = VerticalAlignment.Top;
 
               //Add watermark to the watermarker and generate output document
               watermarker.Add(watermark);
@@ -105,11 +106,12 @@ steps:
             }
           }
         
-        // Instantiate viewer with output document
-        using (Viewer viewer = new GroupDocs.Viewer.Viewer("output.ppt"))
+        // View watermarked file using GroupDocs.Viewer API
+        // Instantiate Viewer with output document
+        using (Viewer viewer = new Viewer("output.ppt"))
           {
             // Set options to view document as HTML
-            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
+            HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output{0}.html");
             viewer.View(options);
           }
         ```

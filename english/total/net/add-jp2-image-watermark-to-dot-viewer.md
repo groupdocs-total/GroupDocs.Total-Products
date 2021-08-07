@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate JP2 image watermark into Word (DOT) documents using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input DOT document
+        *   Instantiate Watermarker with input DOT document
         *   Use JP2 watermark image path as constructor parameter of ImageWatermark class
         *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
@@ -92,7 +92,7 @@ steps:
         using (Watermarker watermarker = new Watermarker("input.dot"))
           {
             // Use JP2 watermark image path as constructor parameter of ImageWatermark class
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.jp2"))
+            using (ImageWatermark watermark = new ImageWatermark("watermark.jp2"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
@@ -107,6 +107,7 @@ steps:
           }
         
         // View watermarked DOT file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
         // Instantiate Viewer with output document
         using (Viewer viewer = new Viewer("output.dot"))
           {

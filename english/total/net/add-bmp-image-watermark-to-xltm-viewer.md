@@ -69,7 +69,7 @@ steps:
     content_left: |
         [GroupDocs.Total](https://products.groupdocs.com/total/net/) makes it easy for developers to integrate BMP image watermark into Excel worksheets using a few lines of C# .NET code.
 
-        *   Instantiate watermarker with input XLTM document
+        *   Instantiate Watermarker with input XLTM document
         *   Use BMP watermark image path as constructor parameter of ImageWatermark class
         *   Set the watermark size and alignment
         *   Add watermark to the watermarker and generate output document
@@ -92,7 +92,7 @@ steps:
         using (Watermarker watermarker = new Watermarker("input.xltm"))
           {
             // Use BMP watermark image path as constructor parameter of ImageWatermark class
-            using (ImageWatermark watermark = new ImageWatermark(@"watermark.bmp"))
+            using (ImageWatermark watermark = new ImageWatermark("watermark.bmp"))
             {
               // Set watermark size and alignment
               watermark.Width = 150;
@@ -107,6 +107,7 @@ steps:
           }
         
         // View watermarked XLTM file using GroupDocs.Viewer API
+        // View watermarked file using GroupDocs.Viewer API
         // Instantiate Viewer with output document
         using (Viewer viewer = new Viewer("output.xltm"))
           {
