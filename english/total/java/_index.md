@@ -44,6 +44,10 @@ submenu:
             text: "Features"
 
           # button loop
+          - link: "#support"
+            text: "Support"
+
+          # button loop
           - link: "https://purchase.groupdocs.com/pricing/total/java"
             text: "Pricing"
 
@@ -73,6 +77,8 @@ products:
           name: "GroupDocs.Viewer for Java"
           content: |
             A powerful document viewer API that allows you to display over 50 document formats in your Java applications. The viewer can work two ways: by rasterizing documents or by converting them to a combination of SVG, HTML, and CSS. Both methods deliver high-fidelity rendering.  
+              
+            Supported file formats include Microsoft Office, Visio, Project and Outlook documents, PDFs, AutoCAD, image files (TIFF, JPG, BMP, GIF, TIFF, etc.) and more.
           link: "/viewer/java"
 
         # product loop
@@ -256,15 +262,99 @@ support:
 ############################# Solutions ############################
 solutions:
     enable: true
-    title: "GroupDocs.Total for other platforms:"
+    title: "GroupDocs.Total for Java offers individual solutions for"
 
     solution:
         # solution loop
-        - img_alt: "GroupDocs.Total for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
-          product: "GroupDocs.Total"
-          platform: ".NET"
-          link: "/total/net"
+        - img_alt: "GroupDocs.Viewer for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-java.png"
+          product: "GroupDocs.Viewer"
+          platform: "Java"
+          link: "/viewer/java"
+        
+        # solution loop
+        - img_alt: "GroupDocs.Annotation for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-java.png"
+          product: "GroupDocs.Annotation"
+          platform: "Java"
+          link: "/annotation/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Conversion for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-java.png"
+          product: "GroupDocs.Conversion"
+          platform: "Java"
+          link: "/conversion/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Comparison for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-java.png"
+          product: "GroupDocs.Comparison"
+          platform: "Java"
+          link: "/comparison/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Signature for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-java.png"
+          product: "GroupDocs.Signature"
+          platform: "Java"
+          link: "/signature/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Assembly for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-java.png"
+          product: "GroupDocs.Assembly"
+          platform: "Java"
+          link: "/assembly/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Metadata for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-java.png"
+          product: "GroupDocs.Metadata"
+          platform: "Java"
+          link: "/metadata/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Search for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-java.png"
+          product: "GroupDocs.Search"
+          platform: "Java"
+          link: "/search/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Parser for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-java.png"
+          product: "GroupDocs.Parser"
+          platform: "Java"
+          link: "/parser/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Watermark for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-java.png"
+          product: "GroupDocs.Watermark"
+          platform: "Java"
+          link: "/watermark/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Editor for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-java.png"
+          product: "GroupDocs.Editor"
+          platform: "Java"
+          link: "/editor/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Merger for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-java.png"
+          product: "GroupDocs.Merger"
+          platform: "Java"
+          link: "/merger/java"
+
+        # solution loop
+        - img_alt: "GroupDocs.Redaction for Java"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-java.png"
+          product: "GroupDocs.Redaction"
+          platform: "Java"
+          link: "/redaction/java"
 
 ############################# Back to top ###############################
 back_to_top:
