@@ -78,7 +78,7 @@ steps:
         
     title_right: "System Requirements"
     content_right: |
-        The below code example requires you to install GroupDocs.Viewer for .NET and GroupDocs.Watermark for .NET libraries. Also, make sure that you have the following prerequisites ready on your system before executing the code below:
+        The below code example requires you to install [GroupDocs.Viewer for .NET](https://products.groupdocs.com/viewer/net/) and [GroupDocs.Signature for .NET](https://products.groupdocs.com/signature/net/) libraries. Also, make sure that you have the following prerequisites ready on your system before executing the code below:
 
         *   Operating Systems: Microsoft Windows, Linux, MacOS
         *   Development Environments: Microsoft Visual Studio, Xamarin, MonoDevelop

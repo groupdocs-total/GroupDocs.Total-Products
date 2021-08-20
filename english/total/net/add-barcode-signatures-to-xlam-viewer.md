@@ -78,7 +78,7 @@ steps:
         
     title_right: "System Requirements"
     content_right: |
-        The below code example requires you to install GroupDocs.Viewer for .NET and GroupDocs.Watermark for .NET libraries. Also, make sure that you have the following prerequisites ready on your system before executing the code below:
+        The below code example requires you to install [GroupDocs.Viewer for .NET](https://products.groupdocs.com/viewer/net/) and [GroupDocs.Signature for .NET](https://products.groupdocs.com/signature/net/) libraries. Also, make sure that you have the following prerequisites ready on your system before executing the code below:
 
         *   Operating Systems: Microsoft Windows, Linux, MacOS
         *   Development Environments: Microsoft Visual Studio, Xamarin, MonoDevelop
@@ -89,7 +89,7 @@ steps:
         ```cs
         // Add barcode signature to Excel worksheet (XLAM) file using GroupDocs.Signature API
         // Instantiate Signature with input XLAM document
-        using (Signature signature = new Signature("input.xlam"))
+        using (Signature signature = new Signature("input.xlsb"))
           {
             // Create barcode option with predefined barcode text using BarcodeSignOptions class
             BarcodeSignOptions options = new BarcodeSignOptions("JohnSmith")
@@ -105,12 +105,13 @@ steps:
             };
 
           // Sign document to file
-          SignResult result = signature.Sign("output.xlam", options);
+          SignResult result = signature.Sign("output.xlsb", options);
 
           // Set options to view signed document as HTML
           HtmlViewOptions viewOptions = HtmlViewOptions.forEmbeddedResources("output{0}.html");
-          try (Viewer viewer = new Viewer("output.xlam")) {
+          try (Viewer viewer = new Viewer("output.xlsb")) {
           viewer.view(viewOptions);
+          }
         ```
         
 ############################# Demos ############################
