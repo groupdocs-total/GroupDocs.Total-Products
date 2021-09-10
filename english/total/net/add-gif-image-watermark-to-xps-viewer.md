@@ -149,98 +149,98 @@ more_formats:
     format:
         # format loop
         - name: "GroupDocs.Viewer for .NET"          
-          link: "/viewer/net"
+          link: "/viewer/net/"
         
         # format loop
         - img_alt: "GroupDocs.Annotation for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
           product: "GroupDocs.Annotation"
           platform: ".NET"
-          link: "/annotation/net"
+          link: "/annotation/net/"
 
         # format loop
         - img_alt: "GroupDocs.Conversion for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
           product: "GroupDocs.Conversion"
           platform: ".NET"
-          link: "/conversion/net"
+          link: "/conversion/net/"
 
         # format loop
         - img_alt: "GroupDocs.Comparison for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
           product: "GroupDocs.Comparison"
           platform: ".NET"
-          link: "/comparison/net"
+          link: "/comparison/net/"
 
         # format loop
         - img_alt: "GroupDocs.Signature for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
           product: "GroupDocs.Signature"
           platform: ".NET"
-          link: "/signature/net"
+          link: "/signature/net/"
 
         # format loop
         - img_alt: "GroupDocs.Assembly for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
           product: "GroupDocs.Assembly"
           platform: ".NET"
-          link: "/assembly/net"
+          link: "/assembly/net/"
 
         # format loop
         - img_alt: "GroupDocs.Metadata for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
           product: "GroupDocs.Metadata"
           platform: ".NET"
-          link: "/metadata/net"
+          link: "/metadata/net/"
 
         # format loop
         - img_alt: "GroupDocs.Search for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
           product: "GroupDocs.Search"
           platform: ".NET"
-          link: "/search/net"
+          link: "/search/net/"
 
         # format loop
         - img_alt: "GroupDocs.Parser for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
           product: "GroupDocs.Parser"
           platform: ".NET"
-          link: "/parser/net"
+          link: "/parser/net/"
 
         # format loop
         - img_alt: "GroupDocs.Watermark for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
           product: "GroupDocs.Watermark"
           platform: ".NET"
-          link: "/watermark/net"
+          link: "/watermark/net/"
 
         # format loop
         - img_alt: "GroupDocs.Editor for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: ".NET"
-          link: "/editor/net"
+          link: "/editor/net/"
 
         # format loop
         - img_alt: "GroupDocs.Merger for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
           product: "GroupDocs.Merger"
           platform: ".NET"
-          link: "/merger/net"
+          link: "/merger/net/"
 
         # format loop
         - img_alt: "GroupDocs.Redaction for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-net.png"
           product: "GroupDocs.Redaction"
           platform: ".NET"
-          link: "/redaction/net"
+          link: "/redaction/net/"
 
         # format loop
         - img_alt: "GroupDocs.Classification for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
           product: "GroupDocs.Classification"
           platform: ".NET"
-          link: "/classification/net"
+          link: "/classification/net/"
 
 ############################# Back to top ###############################
 back_to_top:

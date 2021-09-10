@@ -19,11 +19,11 @@ apis:
   api:
     # api loop
     - title: "GroupDocs.Total Product Family Includes"
-      link: "https://products.groupdocs.com/total/family"
+      link: "https://products.groupdocs.com/total/family/"
       label: "View All On Premise APIs"
       api_product:
         # api_product loop
-        - link: "/total/net"
+        - link: "/total/net/"
           img_alt: "GroupDocs.Total for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
           product: "GroupDocs.Total for"
@@ -31,7 +31,7 @@ apis:
           content: "Targets Windows Forms, ASP.NET, WPF, WCF or any type of application based on .NET Framework 2.0 or later."
 
         # api_product loop
-        - link: "/total/java"
+        - link: "/total/java/"
           img_alt: "GroupDocs.Total for Java"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-java.png"
           product: "GroupDocs.Total for"

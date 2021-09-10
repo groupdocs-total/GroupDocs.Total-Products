@@ -152,98 +152,98 @@ solutions:
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-net.png"
           product: "GroupDocs.Viewer"
           platform: "Java"
-          link: "/viewer/net"
+          link: "/viewer/net/"
         
         # solution loop
         - img_alt: "GroupDocs.Annotation for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
           product: "GroupDocs.Annotation"
           platform: "Java"
-          link: "/annotation/net"
+          link: "/annotation/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Conversion for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
           product: "GroupDocs.Conversion"
           platform: "Java"
-          link: "/conversion/net"
+          link: "/conversion/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Comparison for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
           product: "GroupDocs.Comparison"
           platform: "Java"
-          link: "/comparison/net"
+          link: "/comparison/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Signature for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
           product: "GroupDocs.Signature"
           platform: "Java"
-          link: "/signature/net"
+          link: "/signature/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Assembly for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
           product: "GroupDocs.Assembly"
           platform: "Java"
-          link: "/assembly/net"
+          link: "/assembly/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Metadata for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
           product: "GroupDocs.Metadata"
           platform: "Java"
-          link: "/metadata/net"
+          link: "/metadata/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Search for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
           product: "GroupDocs.Search"
           platform: "Java"
-          link: "/search/net"
+          link: "/search/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Parser for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
           product: "GroupDocs.Parser"
           platform: "Java"
-          link: "/parser/net"
+          link: "/parser/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Watermark for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
           product: "GroupDocs.Watermark"
           platform: "Java"
-          link: "/watermark/net"
+          link: "/watermark/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Editor for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
           product: "GroupDocs.Editor"
           platform: "Java"
-          link: "/editor/net"
+          link: "/editor/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Merger for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
           product: "GroupDocs.Merger"
           platform: "Java"
-          link: "/merger/net"
+          link: "/merger/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Redaction for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-net.png"
           product: "GroupDocs.Redaction"
           platform: "Java"
-          link: "/redaction/net"
+          link: "/redaction/net/"
 
         # solution loop
         - img_alt: "GroupDocs.Classification for .NET"
           image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
           product: "GroupDocs.Classification"
           platform: "Java"
-          link: "/classification/net"
+          link: "/classification/net/"
 
 ############################# Back to top ###############################
 back_to_top:
