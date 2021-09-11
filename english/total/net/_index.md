@@ -353,7 +353,7 @@ solutions:
 
         # solution loop
         - img_alt: "GroupDocs.Redaction for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-net.png"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-redaction-net.png"
           product: "GroupDocs.Redaction"
           platform: ".NET"
           link: "/redaction/net/"

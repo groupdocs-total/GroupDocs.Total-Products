@@ -351,7 +351,7 @@ solutions:
 
         # solution loop
         - img_alt: "GroupDocs.Redaction for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs_redaction-java.png"
+          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-redaction-java.png"
           product: "GroupDocs.Redaction"
           platform: "Java"
           link: "/redaction/java/"
