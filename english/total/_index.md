@@ -4,6 +4,8 @@ layout: "product"
 date: 2021-04-27T09:31:06+03:00
 draft: false
 
+product_tag: "total"
+
 ############################# Head ############################
 head_title: ".NET and Java Library for Manipulating Office, PDF & 90+ Document Formats"
 head_description: "Document manipulation APIs to view annotate convert compare sign and search documents. Consume in any web and desktop document management system"
