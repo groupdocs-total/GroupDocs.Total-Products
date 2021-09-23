@@ -30,7 +30,13 @@ install:
 script:
 - cp -r english $ROOT_DIR/content/
 - hugo --source $ROOT_DIR --minify
+- cd $SRC_DIR
+- zip -r -q $PRODUCT.zip $PRODUCT
 
 after_success:
-- scp -i ./deploy_key -r $SRC_DIR/$PRODUCT $USER@$HOST:$DEST_DIR
-- scp -i ./deploy_key -r $SRC_DIR/sitemap.xml $USER@$HOST:$DEST_DIR/sitemaps/$PRODUCT.xml
+# upload sitemap
+- scp -i ./deploy_key sitemap.xml $USER@$HOST:$DEST_DIR/sitemaps/$PRODUCT.xml
+# upload pages arhive
+- travis_wait 50 scp -i ./deploy_key $PRODUCT.zip $USER@$HOST:$DEST_DIR
+# unzip & clean
+- ssh -i ./deploy_key $USER@$HOST unzip -o -q $DEST_DIR/$PRODUCT.zip -d $DEST_DIR && rm $DEST_DIR/$PRODUCT.zip
