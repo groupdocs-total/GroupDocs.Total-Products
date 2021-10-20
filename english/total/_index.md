@@ -8,7 +8,7 @@ product_tag: "total"
 
 ############################# Head ############################
 head_title: ".NET and Java Library for Manipulating Office, PDF & 90+ Document Formats"
-head_description: "Document manipulation APIs to view annotate convert compare sign and search documents. Consume in any web and desktop document management system"
+head_description: "Document Automation APIs to view annotate convert compare sign and search documents. Consume in any web and desktop document management system"
 
 ############################# Header ############################
 title: ".NET & Java Document Automation APIs"
