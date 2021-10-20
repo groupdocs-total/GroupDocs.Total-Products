@@ -10,7 +10,7 @@ platform: ".NET"
 platform_tag: "net"
 
 ############################# Head ############################
-head_title: "C# .NET APIs to View, Convert, Annotate, Sign, Automate & Search File Formats"
+head_title: "C# .NET APIs to View, Convert, Annotate, Sign, Automate, Watermark, Redact & Search File Formats"
 head_description: "GroupDocs .NET document manipulation libraries and APIs. Consume any API into .NET application for generation, manipulation or conversion of 50+ documents."
 
 ############################# Header ############################
