@@ -87,14 +87,14 @@ products:
         - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-conversion-net.png"
           img_alt: "GroupDocs.Conversion for .NET"
           name: "GroupDocs.Conversion for .NET"
-          content: "Comprehensive document conversion API to configure and convert documents among more than 50 ‎files formats. With features as, render email header during conversion from email, set custom font ‎directories, configure & place watermark, and advanced conversion method etc. this API is much more ‎than a simple file conversion tool.‎‎"
+          content: "Comprehensive document conversion API to configure and convert documents among more than 50 ‎files formats. With features as, render email header during conversion from email, set custom font ‎directories, configure & place watermark, and advanced conversion method etc. this API is much more ‎than a simple file conversion tool."
           link: "/conversion/net/"
 
           # product loop
         - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-comparison-net.png"
           img_alt: "GroupDocs.Comparison for .NET"
           name: "GroupDocs.Comparison for .NET"
-          content: "Document difference checker API to compare both content as well as text styles. Choose level of ‎detail for the comparison process. Apply or Reject changes after difference analysis. Fetch documents ‎via file or stream. Specify word separator & font color to stylize compared text. Compare password ‎protected files.‎‎"
+          content: "Document difference checker API to compare both content as well as text styles. Choose level of ‎detail for the comparison process. Apply or Reject changes after difference analysis. Fetch documents ‎via file or stream. Specify word separator & font color to stylize compared text. Compare password ‎protected files."
           link: "/comparison/net/"
 
           # product loop
@@ -136,7 +136,7 @@ products:
         - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-watermark-net.png"
           img_alt: "GroupDocs.Watermark for .NET"
           name: "GroupDocs.Watermark for .NET"
-          content: "Digital watermark application and manipulation API to apply new watermarks, search and remove ‎existing watermarks from documents of supported formats. Lock watermarks to restrict editing. ‎Replace existing watermarks. Protect text watermark using unreadable characters in presentations. ‎Modify shape properties such as alternative text, rotate angle etc. in presentation.‎‎"
+          content: "Digital watermark application and manipulation API to apply new watermarks, search and remove ‎existing watermarks from documents of supported formats. Lock watermarks to restrict editing. ‎Replace existing watermarks. Protect text watermark using unreadable characters in presentations. ‎Modify shape properties such as alternative text, rotate angle etc. in presentation."
           link: "/watermark/net/"
 
           # product loop
@@ -157,7 +157,7 @@ products:
         - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-redaction-net.png"
           img_alt: "GroupDocs.Redaction for .NET"
           name: "GroupDocs.Redaction for .NET"
-          content: "Document redaction and sanitization API to redact, remove or hide classified information, content and metadata from documents, worksheets, PDF files and slides.‎‎"
+          content: "Document redaction and sanitization API to redact, remove or hide classified information, content and metadata from documents, worksheets, PDF files and slides."
           link: "/redaction/net/"
 
           # product loop
