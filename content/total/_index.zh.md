@@ -7,12 +7,12 @@ draft: false
 product_tag: "total"
 
 ############################# Head ############################
-head_title: ".NET and Java Library for Manipulating Office, PDF & 90+ Document Formats"
-head_description: "Document Automation APIs to view annotate convert compare sign and search documents. Consume in any web and desktop document management system"
+head_title: ".NET 和 Java 库，用于处理 Office、PDF 和 90 多种文档格式"
+head_description: "用于查看注释转换比较符号和搜索文档的文档自动化 API。在任何 Web 和桌面文档管理系统中使用"
 
 ############################# Header ############################
-title: ".NET & Java Document Automation APIs"
-description: "‎Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products.‎"
+title: ".NET 和 Java 文档自动化 API"
+description: "无需任何其他商业产品即可从您自己的桌面解决方案和 Web 应用程序中操作文档。"
 
 ############################# APIs ###############################
 apis:
@@ -20,25 +20,25 @@ apis:
 
   api:
     # api loop
-    - title: "GroupDocs.Total Product Family Includes"
-      link: "https://products.groupdocs.com/total/family/"
-      label: "View All High Code APIs"
+    - title: "GroupDocs.Total 产品系列包括"
+      link: "/total/"
+      label: "查看所有高代码 API"
       api_product:
         # api_product loop
         - link: "/total/net/"
           img_alt: "GroupDocs.Total for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
+          image: "/border/groupdocs-total-net.svg"
           product: "GroupDocs.Total for"
           platform: ".NET"
-          content: "Targets Windows Forms, ASP.NET, WPF, WCF or any type of application based on .NET Framework 2.0 or later."
+          content: "面向 Windows 窗体、ASP.NET、WPF、WCF 或任何类型的基于 .NET Framework 2.0 或更高版本的应用程序."
 
         # api_product loop
         - link: "/total/java/"
           img_alt: "GroupDocs.Total for Java"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-java.png"
+          image: "/border/groupdocs-total-java.svg"
           product: "GroupDocs.Total for"
           platform: "Java"
-          content: "Native Java APIs for the desktop, web or any kind of application based on Java SE or EE."
+          content: "用于桌面、Web 或任何基于 Java SE 或 EE 的应用程序的原生 Java API."
 
 ############################# Support ############################
 support:
@@ -47,28 +47,28 @@ support:
     learning_resource:
         # learning_resource loop
         - link: "https://docs.groupdocs.com/total"
-          label: "Documentation"
+          label: "文档"
 
         # learning_resource loop
         - link: "https://groupdocs.github.io/"
-          label: "Source Code"
+          label: "源代码"
 
         # learning_resource loop
         - link: "https://apireference.groupdocs.com/"
-          label: "API References"
+          label: "API 参考"
 
         # learning_resource loop
         - link: "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g"
-          label: "Video Tutorials"
+          label: "视频教程"
 
     product_support:
         # product_support loop
         - link: "https://forum.groupdocs.com/c/total"
-          label: "Free Support"
+          label: "免费支持"
 
         # product_support loop
         - link: "https://helpdesk.groupdocs.com/"
-          label: "Paid Support"
+          label: "付费支持"
 
         # product_support loop
         - link: "https://blog.groupdocs.com/category/total/"
@@ -76,7 +76,7 @@ support:
 
     # buttons
     icon_l: "fas fa-arrow-down"
-    label_l: "Download Free Trial"
+    label_l: "下载免费试用版"
     link_l: "https://downloads.groupdocs.com/total"
 
     icon_r: "fab fa-github-alt"

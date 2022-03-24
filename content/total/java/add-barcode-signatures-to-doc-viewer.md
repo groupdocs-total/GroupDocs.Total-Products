@@ -6,7 +6,7 @@ draft: false
 
 ############################# Head ############################
 head_title: "Add Barcode Signatures to DOC Viewer in Java"
-head_description: "Add 60+ digital barcode signatures to Word processing documents (DOC) and 100+ other file formats. View the signed file in HTML using GroupDocs.Total for Java APIs."
+head_description: "Add 60+ digital barcode signatures to Word processing documents (DOC), and 100+ other file formats. View the signed file in HTML using GroupDocs.Total for Java APIs."
 
 ############################# Header ############################
 title: "Add Barcode Signatures to DOC Viewer"
