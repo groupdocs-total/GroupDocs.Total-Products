@@ -21,7 +21,7 @@ apis:
   api:
     # api loop
     - title: "GroupDocs.Total Product Family Includes"
-      link: "https://products.groupdocs.com/total/family/"
+      link: "/total/"
       label: "View All High Code APIs"
       api_product:
         # api_product loop
