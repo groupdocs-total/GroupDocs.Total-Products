@@ -174,7 +174,7 @@ products:
           img_alt: "GroupDocs.Redaction for Java"
           name: "GroupDocs.Redaction for Java"
           content: |
-            Java Document redaction API to protect or remove any confidential information from Word, Excel, PowerPoint, Images and PDF documents using text, metadata ‎and annotation redaction types.
+            Java Document redaction API to protect or remove any confidential information from Word, Excel, PowerPoint, Images and PDF documents using text, metadata and annotation redaction types.
           link: "/redaction/java/"
 
 ############################# Features ############################
