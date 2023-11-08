@@ -52,7 +52,7 @@ submenu:
             text: "Pricing"
 
   right:
-      link_download: "https://downloads.groupdocs.com/total"
+      link_download: "https://releases.groupdocs.com/total"
       link_learn: "https://docs.groupdocs.com/total/net/"
       link_buy: "https://purchase.groupdocs.com"
 

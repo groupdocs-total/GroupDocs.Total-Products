@@ -17,7 +17,7 @@ button:
     enable: true
     icon: "fas fa-arrow-down"
     label: "Download Free Trial"
-    link: "https://downloads.groupdocs.com/total"
+    link: "https://releases.groupdocs.com/total"
 
 ############################# SubMenu ############################
 submenu:
@@ -49,7 +49,7 @@ submenu:
               text: "Pricing"
 
     right:
-        link_download: "https://downloads.groupdocs.com"
+        link_download: "https://releases.groupdocs.com"
         link_learn: "https://docs.groupdocs.com/total/net/"
         link_buy: "https://purchase.groupdocs.com"
 

@@ -61,7 +61,7 @@ support:
 
     icon_l: "fas fa-arrow-down"
     label_l: "Download Free Trial"
-    link_l: "https://downloads.groupdocs.com/total"
+    link_l: "https://releases.groupdocs.com/total"
 
     icon_r: "fab fa-github-alt"
     label_r: "Download Examples"

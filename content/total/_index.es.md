@@ -77,7 +77,7 @@ support:
     # buttons
     icon_l: "fas fa-arrow-down"
     label_l: "Descargue prueba gratis"
-    link_l: "https://downloads.groupdocs.com/total"
+    link_l: "https://releases.groupdocs.com/total"
 
     icon_r: "fab fa-github-alt"
     label_r: "Download Examples"
