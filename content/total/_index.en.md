@@ -300,7 +300,7 @@ cloud_links:
 
     #  loop
     - icon: "groupdocs_total-apps"
-      title: "GroupDocs.Total Online App"
+      title: "GroupDocs.Total Online Apps"
       link: "https://products.groupdocs.app"
       content: "Free online web apps to view and edit document content, compare and merge different Microsoft Office, OpenOffice, images & other popular file formats."    
 
