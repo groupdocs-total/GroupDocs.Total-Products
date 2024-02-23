@@ -267,10 +267,21 @@ faq:
             <b>Optimized package sizes:</b> The suite comes as a single, compact package, reducing resource consumption and simplifying integration into your applications compared to using individual products with separate installations.
           </li>
         <ul>
+
     #  loop
     - question: "How do I get started with GroupDocs.Total?"
       answer: |
         You can start with a free trial to explore the features and see if it meets your needs. GroupDocs also offers various [documentation](https://docs.groupdocs.com/total/) resources and [tutorials](https://groupdocs.github.io) to help you get started with integration and development.
+
+    #  loop
+    - question: "Why to prefer GroupDocs.Total instead of buying individual GroupDocs products?"
+      answer: |
+        Purchasing a single GroupDocs.Total license typically costs less than buying licenses for two or more individual GroupDocs products. <br>
+        This translates to several key benefits for you: <br><br>
+        <b>Cost savings:</b> GroupDocs.Total offers a significant discount compared to purchasing individual products, allowing you to stretch your budget further. <br><br>
+        <b>Simplified management:</b> With GroupDocs.Total, you manage everything under one license, eliminating the need to track and maintain multiple licenses for different products. This simplifies your administrative tasks and reduces overall costs. <br><br>
+        If you're looking for a cost-effective and feature-rich solution for your document management needs, GroupDocs.Total is the perfect choice.
+
     #  loop
     - question: "Does GroupDocs.Total offer any technical support?"
       answer: |
