@@ -253,7 +253,7 @@ faq:
 
   items:
     #  loop
-    - question: "What is GroupDocs.Total, and how is it different from individual GroupDocs products?"
+    - question: "What is GroupDocs.Total, and how is it different from other GroupDocs products?"
       answer: |
         GroupDocs.Total is a comprehensive suite that combines the functionalities of all individual GroupDocs products into a single package. This offers several advantages: <br><br>
         <ul>
@@ -269,11 +269,6 @@ faq:
         <ul>
 
     #  loop
-    - question: "How do I get started with GroupDocs.Total?"
-      answer: |
-        You can start with a free trial to explore the features and see if it meets your needs. GroupDocs also offers various [documentation](https://docs.groupdocs.com/total/) resources and [tutorials](https://groupdocs.github.io) to help you get started with integration and development.
-
-    #  loop
     - question: "Why to prefer GroupDocs.Total instead of buying individual GroupDocs products?"
       answer: |
         Purchasing a single GroupDocs.Total license typically costs less than buying licenses for two or more individual GroupDocs products. <br>
@@ -282,6 +277,11 @@ faq:
         <b>Simplified management:</b> With GroupDocs.Total, you manage everything under one license, eliminating the need to track and maintain multiple licenses for different products. This simplifies your administrative tasks and reduces overall costs. <br><br>
         If you're looking for a cost-effective and feature-rich solution for your document management needs, GroupDocs.Total is the perfect choice.
 
+    #  loop
+    - question: "How do I get started with GroupDocs.Total?"
+      answer: |
+        You can start with a free trial to explore the features and see if it meets your needs. GroupDocs also offers various [documentation](https://docs.groupdocs.com/total/) resources and [tutorials](https://groupdocs.github.io) to help you get started with integration and development.
+        
     #  loop
     - question: "Does GroupDocs.Total offer any technical support?"
       answer: |
