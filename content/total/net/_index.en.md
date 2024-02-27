@@ -1,371 +1,341 @@
 ---
-############################# Static ############################
-layout: "product"
-date: 2021-04-27T09:31:06+03:00
+############################# Static ##########################
+layout: "landing"
+date: 2023-06-29T12:38:08
 draft: false
 
+lang: en
 product: "Total"
 product_tag: "total"
 platform: ".NET"
 platform_tag: "net"
 
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
+      
 ############################# Head ############################
-head_title: "C# .NET APIs to View, Convert, Annotate, Sign, Automate, Watermark, Redact & Search File Formats"
-head_description: "GroupDocs .NET document manipulation libraries and APIs. Consume any API into .NET application for generation, manipulation or conversion of 50+ documents."
+head_title: "All-in-one document automation library for .NET applications"
+head_description: "GroupDocs.Total for .NET is an all-in-one document automation API suite for .NET developers, providing a comprehensive set of tools for working with various document formats, including PDF, Word, Excel, Image, HTML, Diagram, and more."
 
-############################# Header ############################
-title: ".NET Document Automation APIs"
-description: "APIs to View, Export, Annotate, Compare, Sign, Automate and Search Documents in your .NET Applications."
-button:
-    enable: true
+############################# Header ##########################
+title: "Streamline document automation<br> in your .NET apps"
+description: "Unlock document automation: convert, view and compare, edit and sign between more than 200 formats easily."
+words:
+  for: "for"
 
-############################# SubMenu ############################
-submenu:
-  enable: true
-  
-  left:
-      img_alt: "GroupDocs.Total for .NET"
-      image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
-      product: "GroupDocs.Total"
-      platform: ".NET"
+actions:
+  main: "Free NuGet Download"
+  main_link: "https://www.nuget.org/packages/GroupDocs.Total"
+  alt: "Licensing"
+  alt_link: "https://purchase.groupdocs.com/pricing/total/net"
+  title: "Ready to get started?"
+  description: "Try GroupDocs.Total features for free or request a license"
 
-  middle:
-      button:
-          # button loop
-          - link: "#overview"
-            text: "Overview"
+release:
+  title: "Version {0}&nbsp;released"
+  notes: "See what’s new"
+  downloads: "Downloads"
+  link: "https://releases.groupdocs.com/total/net/release-notes/latest/"
 
-          # button loop
-          - link: "#products"
-            text: "Products"
+code:
+  title: "Merge and view Word files in C#"
+  more: "More examples"
+  more_link: "https://github.com/groupdocs-total/GroupDocs.Total-for-.NET"
+  install: "dotnet add package GroupDocs.Total"
+  content: |
+    ```csharp {style=abap} 
+    // Load the source DOCX file
+    using (Merger merger = new Merger("sample1.docx"))
+    {
+        // Add another DOCX file to merge
+        merger.Join("sample2.docx");
 
-          # button loop
-          - link: "#features"
-            text: "Features"
+        // Merge DOCX files and save result
+        merger.Save("merged.docx");
+    }
 
-          # button loop
-          - link: "#support"
-            text: "Support"
-
-          # button loop
-          - link: "https://purchase.groupdocs.com/pricing/total/net"
-            text: "Pricing"
-
-  right:
-      link_download: "https://releases.groupdocs.com/total"
-      link_learn: "https://docs.groupdocs.com/total/net/"
-      link_buy: "https://purchase.groupdocs.com"
+    // Load merged DOCX file into viewer
+    using (var viewer = new Viewer("merged.docx"))
+    {
+        // Set output HTML options, one file per page
+        var viewOptions = 
+        HtmlViewOptions.ForEmbeddedResources("page{0}.html");
+        
+        // Render DOCX to HTML with embedded resources        
+        viewer.View(viewOptions);
+    }
+    ```
 
 ############################# Overview ############################
 overview:
-    enable: true
-    content: "GroupDocs.Total for .NET is a compilation of every .NET API offered by GroupDocs. We compile it on a daily basis to ensure that it contains the most up to date versions of each of our .NET document manipulation APIs.
-    <br><br>With GroupDocs.Total for .NET developers can use all our APIs with a single license. However, you can order any individual API as well. "
+  enable: true
+  title: "GroupDocs.Total at a glance"
+  description: "Automate file view, convert, edit, compare, search, watermarking and other workflows in .NET applications"
+  features:
+    # feature loop
+    - title: "Combine the power of multiple GroupDocs products to a single, comprehensive solution"
+      content: | 
+        You can use features of different GroupDocs products to create a customized approach that meets your specific needs.
+        <br><br>
+        For example, you can convert a Word file to PDF and then add a digital signature. Or populate a document template data from a database, or extract text from an image and then translate it into another language.
+        <br><br>
+        The possibilities are endless!
+          
+    # feature loop
+    - title: "Master the diversity of file formats"
+      content: "GroupDocs.Total for .NET unlocks compatibility with over 200 file formats, empowering you to process documents of all popular types. From office formats like Word and Excel to images, code, and encrypted files, we've got you covered."
 
-############################# Products ############################
-products:
-    enable: true
-    title: "Products"
-    description: "GroupDocs.Total for .NET includes the following document manipulation APIs for .NET:"
+    # feature loop
+    - title: "Cross-platform support"
+      content: "Free yourself from platform limitations. GroupDocs.Total provides cross-platform compatibility, allowing you to deliver optimal performance and solution availability to users on any system where .NET can be installed."
 
-    product:
-        # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-viewer-net.png?v2"
-          img_alt: "GroupDocs.Viewer for .NET"
-          name: "GroupDocs.Viewer for .NET"
-          content: "Powerful document viewer API to render, view and display documents of more than 50 file formats. Comprehensively render whole document, efficiently render partial document, or render specific page/cell range. Render individual document layer, with or without annotations and comments for the supported file formats."
-          link: "/viewer/net/"
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "Platform independence"
+  description: "GroupDocs.Total for .NET supports the following operating systems, frameworks and package managers"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "VS Code"
+      image: "vs_code"
+    # platform loop
+    - title: "ReSharper"
+      image: "resharper"
+    # platform loop
+    - title: "macOS"
+      image: "finder"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "NuGet"
+      image: "nuget"
 
-        # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-annotation-net.png"
-          img_alt: "GroupDocs.Annotation for .NET"
-          name: "GroupDocs.Annotation for .NET"
-          content: "Annotation management API to create and manipulate various types of annotations, such as, area, text, polyline, point, underline etc. It presents you with a comprehensive set of markup tools to highlight, strikethrough, tag and comment on text and images. Print the annotated documents or export to PDF along with annotations."
-          link: "/annotation/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-conversion-net.png"
-          img_alt: "GroupDocs.Conversion for .NET"
-          name: "GroupDocs.Conversion for .NET"
-          content: "Comprehensive document conversion API to configure and convert documents among more than 50 files formats. With features as, render email header during conversion from email, set custom font directories, configure & place watermark, and advanced conversion method etc. this API is much more than a simple file conversion tool."
-          link: "/conversion/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-comparison-net.png"
-          img_alt: "GroupDocs.Comparison for .NET"
-          name: "GroupDocs.Comparison for .NET"
-          content: "Document difference checker API to compare both content as well as text styles. Choose level of detail for the comparison process. Apply or Reject changes after difference analysis. Fetch documents via file or stream. Specify word separator & font color to stylize compared text. Compare password protected files."
-          link: "/comparison/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-signature-net.png"
-          img_alt: "GroupDocs.Signature for .NET"
-          name: "GroupDocs.Signature for .NET"
-          content: "eSignature manipulation API to sign digital documents of various formats. Fetch all registered certificates present in the system. Apply signature of many types, such as, text, barcode, image, QR-code etc. Perform simple and advanced search to locate desired signatures. Configure signature properties, such as, shadow, alignment, dimensions and much more."
-          link: "/signature/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-assembly-net.png"
-          img_alt: "GroupDocs.Assembly for .NET"
-          name: "GroupDocs.Assembly for .NET"
-          content: "Document automation and report generation API by building and customizing templates for supported formats. Manipulate data using formulae & sequential data operations, format strings in template syntax, set ordinal, cardinal, alphabetic, and numeric formatting. Define variables; dynamically insert contents to reports with conditional formatting and so on."
-          link: "/assembly/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-metadata-net.png"
-          img_alt: "GroupDocs.Metadata for .NET"
-          name: "GroupDocs.Metadata for .NET"
-          content: "Metadata access and manipulation API to read, edit, replace and remove metadata of various document types. Compare metadata properties of two files to identify their similarities and differences. Export metadata to Excel, CSV or DataSet. Detect MIME Type of a Specific File or File Stream. Remove location information from photos. Reduce memory consumption of files."
-          link: "/metadata/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-search-net.png"
-          img_alt: "GroupDocs.Search for .NET"
-          name: "GroupDocs.Search for .NET"
-          content: "Document and text search API that offers basic to advanced search features, such as, build and merge multiple indexes, search via Simple, Boolean, Fuzzy, Regular Expression (Regex) and other query types. Apply fast, reliable and smart search to files, documents and emails. Search based on homophonic terms, synonyms, date range, wild cards & case sensitivity."
-          link: "/search/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-parser-net.png"
-          img_alt: "GroupDocs.Parser for .NET"
-          name: "GroupDocs.Parser for .NET"
-          content: "Text extractor API that supports extraction of raw, formatted & structured text and metadata from supported file formats. Parse password protected documents. Choose between fast or standard text extraction. Markdown & HTML formatter supports formatting of font, hyperlinks, headings, lists & tables. Get data from Email container (Exchange Web Server, POP3, IMAP)."
-          link: "/parser/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-watermark-net.png"
-          img_alt: "GroupDocs.Watermark for .NET"
-          name: "GroupDocs.Watermark for .NET"
-          content: "Digital watermark application and manipulation API to apply new watermarks, search and remove existing watermarks from documents of supported formats. Lock watermarks to restrict editing. Replace existing watermarks. Protect text watermark using unreadable characters in presentations. Modify shape properties such as alternative text, rotate angle etc. in presentation."
-          link: "/watermark/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-editor-net.png"
-          img_alt: "GroupDocs.Editor for .NET"
-          name: "GroupDocs.Editor for .NET"
-          content: "Document Editor API to load document of supported file format, convert it to HTML, push HTML to external HTML editor, save the HTML to its original file format. Separately fetch resources attached with any document. Get CSS Content of HTML Document. Fetch HTML DOM from String Content & Convert to Document. Apply Security to Resultant Document."
-          link: "/editor/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-merger-net.png?v2"
-          img_alt: "GroupDocs.Merger for .NET"
-          name: "GroupDocs.Merger for .NET"
-          content: "Document merger and splitter API to combine, split, rearrange, swap, trim, and remove single page or a collection of pages, slides or diagrams. Set or remove password protection for known and unknown file formats. Stitch or split single or batch of documents. Trim document by removing specific pages, slides or diagrams."
-          link: "/merger/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-redaction-net.png"
-          img_alt: "GroupDocs.Redaction for .NET"
-          name: "GroupDocs.Redaction for .NET"
-          content: "Document redaction and sanitization API to redact, remove or hide classified information, content and metadata from documents, worksheets, PDF files and slides."
-          link: "/redaction/net/"
-
-          # product loop
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-classification-net.png"
-          img_alt: "GroupDocs.Classification for .NET"
-          name: "GroupDocs.Classification for .NET"
-          content: "Raw text and documents classification API for .NET applications. Classify content and document formats like Microsoft Office Word, PDF, OpenDocument, RTF and Text using several taxonomies including documents and IAB-2. Easily customize the classified results using bunch of advanced features as per your requirements."
-          link: "/classification/net/"
+############################# File formats ############################
+formats:
+  enable: true
+  title: "Supported file formats"
+  description: |
+    GroupDocs.Total for .NET supports operations with the following [file formats](https://docs.groupdocs.com/total/net/supported-document-formats/).
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### Microsoft Office, OpenDocument and text formats
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM        
+        * **Project:** MPP, MPT, MPX
+        * **Outlook:** MSG, EML, EMLX, PST, OST
+        * **OneNote:** ONE
+        * **OpenDocument:** ODT, OTT, ODS, ODP, OTP, OTS, ODG
+        * **Fixed Page Layout:** PDF, TEX, XPS, OXPS
+        * **e-Books:** EPUB, MOBI, DjVu
+        * **Delimiter-Separated Values:** CSV, TSV
+    # group loop
+    - color: "blue"
+      content: |
+        ### Images, Graphics & Diagrams
+        * **Raster images:** BMP, GIF, JPG, PNG, TIFF, WebP, DNG, DIB, Jpeg2000 family
+        * **Windows Icon:** ICO
+        * **Scalable Vector Graphics:** SVG, CDR, CMX, IGS, SVGZ        
+        * **Adobe Photoshop:** PSD, PSB        
+        * **Stereo Lithography (3D Printing):** STL        
+        * **Medical Imaging:** DICOM
+        * **Plotter Documents:** PLT, HPG
+        * **Autodesk Design Web Formats:** DWF, DWG
+        * **AutoCAD Drawing:** DWT, IFC, STL, CF2        
+      # group loop
+    - color: "red"
+      content: |
+        ### Other        
+        * **Web:** HTML, MHT, MHTML, XML
+        * **Metafile:** WMF, EMF, CGM, EMZ, WMZ
+        * **Visio:** VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, VSDM
+        * **Project:** MPP, MPT, MPX
+        * **PostScript:** PS, EPS
+        * **Archives:** ZIP, TAR, BZ2, GZ, RAR, RAR5
+        * **Other:** VCF, VCARD, NUMBERS, NSF, OBJ
+        * **C/C++/C# Files:** C, CC, C# , CPP, CXX, CS, H, HH, M, MM
+        * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
 
 ############################# Features ############################
 features:
-    enable: true
-    title: "Advanced API Features"
-
-    feature:
-      # feature loop
-      - icon: "fas fa-eye"
-        content: "View any format document in its original format or in HTML, Images or PDF format"
-
-      # feature loop
-      - icon: "fas fa-file"
-        content: "Annotate any PDF, DOCX, XLSX and PPTX documents"
-
-      # feature loop
-      - icon: "fas fa-save"
-        content: "Save annotations in different objects like JSON files, Databases or merge with original file"
-      
-      # feature loop
-      - icon: "fas fa-file-export"
-        content: "Export annotations to separate PDF or Word file"
-
-      # feature loop
-      - icon: "fas fa-bolt"
-        content: "Fastest on-the-fly conversion API"
-
-      # feature loop
-      - icon: "fas fa-clone"
-        content: "Batch conversion of multiple files"
-
-      # feature loop
-      - icon: "fas fa-file-code"
-        content: "Compares content for differences in words and paragraphs"
-
-      # feature loop
-      - icon: "fas fa-file-contract"
-        content: "Separate differences summary while using comparison API"
-
-      # feature loop
-      - icon: "fas fa-signature"
-        content: "Multiple signature properties"
-
-      # feature loop
-      - icon: "fas fa-file-signature"
-        content: "Setup signature on arbitrary pages like first, last, even, odd etc"
-
-      # feature loop
-      - icon: "fas fa-server"
-        content: "Generate Multi format documents from more than one data sources"
-
-      # feature loop
-      - icon: "fas fa-key"
-        content: "Built-in and custom metadata operations in the form key/value pairs"
-
-      # feature loop
-      - icon: "fas fa-file-download"
-        content: "Export metadata attached with supported file formats"
-
-      # feature loop
-      - icon: "fab fa-searchengin"
-        content: "Multiple basic and advance searching methods"
-
-      # feature loop
-      - icon: "fas fa-search"
-        content: "Fuzzy and Synonym Search"
-
-      # feature loop
-      - icon: "fas fa-search-minus"
-        content: "Search and remove Text/Image watermark"
-
-      # feature loop
-      - icon: "fas fa-file-image"
-        content: "Adding watermark to images inside a document"
-
-      # feature loop
-      - icon: "fas fa-file-alt"
-        content: "Extract structured and highlighted text"
-      
-      # feature loop
-      - icon: "fas fa-file-archive"
-        content: "Fetches text from containers containing other files such as zip archives"
-
-      # feature loop
-      - icon: "fas fa-file-invoice"
-        content: "Direct and inverse document transformation"
-
-      # feature loop
-      - icon: "fas fa-edit"
-        content: "Edit multiple document formats"
-
-############################# Support ############################
-support:
-    enable: true
-
-############################# Solutions ############################
-solutions:
-    enable: true
-    title: "GroupDocs.Total for .NET offers individual solutions for"
-
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Viewer for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-net.png"
-          product: "GroupDocs.Viewer"
-          platform: ".NET"
-          link: "/viewer/net/"
-        
-        # solution loop
-        - img_alt: "GroupDocs.Annotation for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
-          product: "GroupDocs.Annotation"
-          platform: ".NET"
-          link: "/annotation/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Conversion for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
-          product: "GroupDocs.Conversion"
-          platform: ".NET"
-          link: "/conversion/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Comparison for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
-          product: "GroupDocs.Comparison"
-          platform: ".NET"
-          link: "/comparison/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Signature for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
-          product: "GroupDocs.Signature"
-          platform: ".NET"
-          link: "/signature/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Assembly for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
-          product: "GroupDocs.Assembly"
-          platform: ".NET"
-          link: "/assembly/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Metadata for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
-          product: "GroupDocs.Metadata"
-          platform: ".NET"
-          link: "/metadata/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Search for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
-          product: "GroupDocs.Search"
-          platform: ".NET"
-          link: "/search/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Parser for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
-          product: "GroupDocs.Parser"
-          platform: ".NET"
-          link: "/parser/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Watermark for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
-          product: "GroupDocs.Watermark"
-          platform: ".NET"
-          link: "/watermark/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Editor for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-          product: "GroupDocs.Editor"
-          platform: ".NET"
-          link: "/editor/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Merger for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
-          product: "GroupDocs.Merger"
-          platform: ".NET"
-          link: "/merger/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Redaction for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-redaction-net.png"
-          product: "GroupDocs.Redaction"
-          platform: ".NET"
-          link: "/redaction/net/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Classification for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
-          product: "GroupDocs.Classification"
-          platform: ".NET"
-          link: "/classification/net/"
-
-############################# Back to top ###############################
-back_to_top:
   enable: true
+  title: "GroupDocs.Total features"
+  description: "Comprehensively manage, render, and convert PDFs and Office Documents"
+
+  items:
+    # feature loop
+    - icon: "viewer"
+      title: "Extensive File Viewing"
+      content: "Comprehensive document viewing for over 180 formats, including HTML, images, and PDF."
+
+    # feature loop
+    - icon: "conversion"
+      title: "Format Conversion"
+      content: "Seamless conversion between various document formats without external tools."
+
+    # feature loop
+    - icon: "annotation"
+      title: "Interactive Annotation"
+      content: "Advanced annotation capabilities for text and image elements within documents."
+
+    # feature loop
+    - icon: "comparison"
+      title: "Content Comparison"
+      content: "Precise document comparison, highlighting differences in content and style."
+
+    # feature loop
+    - icon: "signature"
+      title: "Signature Flexibility"
+      content: "Versatile signature options, including text, image, and digital signatures."
+
+    # feature loop
+    - icon: "assembly"
+      title: "Template-Based Document Creation"
+      content: "Automated document generation from templates and external data sources."
+
+    # feature loop
+    - icon: "metadata"
+      title: "Metadata Management"
+      content: "Robust metadata access and manipulation for enhanced document control."
+
+    # feature loop
+    - icon: "search"
+      title: "Advanced Search"
+      content: "Powerful search functionality with support for fuzzy and synonym algorithms."
+
+    # feature loop
+    - icon: "watermark"
+      title: "Watermark Control"
+      content: "Effortless document watermark management, offering customization and extraction features."
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "Code samples"
+  description: "Some real-world scenarios of GroupDocs.Total for .NET usage"
+  items:
+    # code sample loop
+    - title: "Secure and organize contracts: Apply watermarks and manage metadata in DOCX file"
+      content: |
+        Efficiently protect and organize your Word documents with this comprehensive code example. The sample below empowers you to implement robust watermarking and metadata management within your contract workflow for enhanced security and information management. It demonstrates how to: <br><br>
+        <b>Apply a Custom Watermark:</b> Add a prominent 'Contract Draft' watermark to the document for visual clarity and protection. [Customize the watermark](https://docs.groupdocs.com/watermark/net/basic-usage/customize/) with font, color, opacity, and alignment options. <br><br>
+        <b>Enhance Metadata:</b> Easily [modify document metadata](https://docs.groupdocs.com/metadata/net/working-with-metadata-in-wordprocessing-documents/) to include essential details like author, creation time, company, category, and keywords for improved organization and searchability.
+       
+        {{< landing/code title="C#">}}
+        ```csharp {style=abap}  
+        using GroupDocs.Metadata;
+        using GroupDocs.Watermark;
+        using GroupDocs.Watermark.Common;
+        using GroupDocs.Watermark.Watermarks;
+        
+        // Load your document into watermarker
+        using (Watermarker watermarker = new Watermarker("contract.docx"))
+        {
+            // Set the desired text and font for the watermark
+            TextWatermark watermark = new TextWatermark("Contract Draft", new Font("Arial", 60, FontStyle.Bold));
+            
+            // Choose font color and text opacity, rotation and alignments
+            watermark.ForegroundColor = Color.DarkGreen;
+            watermark.Opacity = 0.5;
+            watermark.HorizontalAlignment = HorizontalAlignment.Center;
+            watermark.VerticalAlignment = VerticalAlignment.Center;
+            
+            // Apply the watermark
+            watermarker.Add(watermark);
+            
+            // Save the resulting document
+            watermarker.Save("watermarked-contract.docx");
+        }
+
+        using (Metadata metadata = new Metadata("watermarked-contract.docx"))
+        {
+          var root = metadata.GetRootPackage<WordProcessingRootPackage>();
+
+          // Update document metadata properties
+          root.DocumentProperties.Author = "Name Surname";
+          root.DocumentProperties.CreatedTime = DateTime.Now;
+          root.DocumentProperties.Company = "Company Name";
+          root.DocumentProperties.Category = "Work materials";
+          root.DocumentProperties.Keywords = "contract, watermarked";
+
+          // Save document with updated metadata
+          metadata.Save("contract-final.docx");
+        }        
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "Streamlined Document Redaction"
+      content: |
+        <b>Scenario:</b> A large legal firm frequently processes diverse documents containing confidential client information that must be redacted before sharing with third-parties or for public disclosure. Manually redacting this sensitive information can be tedious, time-consuming, and prone to human error. To ensure efficiency, accuracy, and compliance with data protection regulations, the legal firm seeks an automated solution to streamline the document redaction process. 
+        
+        <br>
+
+        <b>Solution:</b>
+        GroupDocs.Total automates the process, triggering redaction upon receiving a document. Furthermore, [flexible options](https://docs.groupdocs.com/redaction/net/text-redactions/) empower customization by allowing you to set rules, choose redaction modes (e.g., blackout, replace with asterisks), and specify specific sections or pages for redaction. Finally, [user-friendly output](https://docs.groupdocs.com/viewer/net/rendering-to-pdf/) generates redacted documents in PDF format for easy sharing and review, while enhanced security and auditability ensure the entire process is documented for compliance and accountability. 
+        <br><br>
+        This comprehensive solution empowers legal professionals and other organizations to significantly reduce redaction time and costs, minimize human error, and consistently handle sensitive information with confidence.        
+              
+        {{< landing/code title="C#">}}
+        ```csharp {style=abap}   
+        using GroupDocs.Redaction;
+        using GroupDocs.Viewer;
+        using GroupDocs.Viewer.Options;
+
+        // Load document with private data into redactor 
+        using (Redactor redactor = new Redactor("customer-info.docx"))
+        {
+          // Setup and customize redaction options 
+          redactor.Apply(new ExactPhraseRedaction("John Smith", new ReplacementOptions("[personal]")));
+          // Apply redactions and save result 
+          redactor.Save();
+        }
+
+        // Load redacted file for review 
+        using (var viewer = new Viewer("customer-info.docx"))
+        {
+          // Setup PDF as desired viewing format       
+          var viewOptions = new PdfViewOptions("redacted-info.pdf");
+
+          // Save document into PDF      
+          viewer.View(viewOptions);
+        }
+        ```
+        {{< /landing/code >}}
+############################# Reviews ############################
+# reviews:
+# enable: true
+# title: "GroupDocs products reviews"
+# description: "Don't just take our word for it. See what other developers say about our APIs"
+
+# items:
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "Excellent service and excellent products. They were extremely helpful and responsive during the GroupDocs.Viewer for .NET implementation process, can’t recommend them highly enough."
+#     author: "Martin Lasarga"
+#     company: "Product Manager at Axentria ECM by G.S.I."
+
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "After implementing and using GroupDocs.Viewer for .NET in the project it looks to be working very well. I have tested with a lot of documents and so far so good. Everything I’ve thrown at it renders nicely and looks just as good as it would in a PDF viewer or MS Word."
+#     author: "Mats Oustad"
+#     company: "Senior Consultant/Partner at Novanet AS"
 ---
