@@ -1,362 +1,352 @@
 ---
-############################# Static ############################
-layout: "product"
-date: 2021-04-27T09:31:06+03:00
+############################# Static ##########################
+layout: "landing"
+date: 2023-06-29T12:38:08
 draft: false
 
+lang: es
 product: "Total"
 product_tag: "total"
 platform: "Java"
 platform_tag: "java"
 
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
+      
 ############################# Head ############################
-head_title: "API de Java para ver, convertir, anotar, firmar, automatizar y buscar formatos de archivo"
-head_description: "Utilice las versiones de Java de las API de manipulación de documentos de GroupDocs para integrarlas con sus propias plataformas y aplicaciones de Java."
+head_title: "Suite de automatización de documentos todo en uno para aplicaciones Java"
+head_description: "GroupDocs.Total para Java es una biblioteca integral de automatización de documentos diseñada para desarrolladores de Java, que ofrece una amplia gama de funcionalidades para manejar diversos formatos de documentos como PDF, Word, Excel, imágenes, HTML, diagramas y más."
 
 ############################# Header ############################
-title: "Bibliotecas de automatización de documentos Java"
-description: "API para ver, exportar, anotar, comparar, firmar, automatizar y buscar documentos desde cualquier aplicación Java."
-button:
-    enable: true
+title: "Simplifique la automatización de documentos<br> en sus proyectos Java"
+description: "Mejore las capacidades de automatización de documentos: convierta, vea, compare, edite y firme sin esfuerzo más de 200 formatos de archivos con facilidad."
+words:
+  for: "for"
 
-############################# SubMenu ############################
-submenu:
-  enable: true
-  
-  left:
-      img_alt: "GroupDocs.Total for Java"
-      image: "/border/groupdocs-total-java.svg"
-      product: "GroupDocs.Total"
-      platform: "Java"
+actions:
+  main: "Descarga gratuita de Maven"
+  main_link: "https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-total/"
+  alt: "Licencia"
+  alt_link: "https://purchase.groupdocs.com/pricing/total/java"
+  title: "¿Listo para comenzar?"
+  description: "Pruebe GroupDocs.Total funciones gratis o solicite una licencia"
 
-  middle:
-      button:
-          # button loop
-          - link: "#overview"
-            text: "Visión de conjunto"
+release:
+  title: "Versión {0} lanzada"
+  notes: "Ver qué hay de nuevo"
+  downloads: "Descargas"
+  link: "https://releases.groupdocs.com/total/java/release-notes/latest/"
 
-          # button loop
-          - link: "#products"
-            text: "productos"
+code:
+  title: "Fusionar y ver archivos de Word en Java"
+  more: "Más ejemplos"
+  more_link: "https://github.com/groupdocs-total/GroupDocs.Total-for-Java"
+  install: |
+    <dependencies>
+      <dependency>
+        <groupId>com.groupdocs</groupId>
+        <artifactId>groupdocs-total</artifactId>
+        <version>{0}</version>
+      </dependency>
+    </dependencies>
 
-          # button loop
-          - link: "#features"
-            text: "Características"
+    <repositories>
+      <repository>
+        <id>repository.groupdocs.com</id>
+        <name>GroupDocs Repository</name>
+        <url>https://repository.groupdocs.com/repo/</url>
+      </repository>
+    </repositories>
+  content: |
+    ```java {style=abap}
+    // Cargue el archivo DOCX de origen 
+    Merger merger = new Merger("sample1.docx");
+    
+    // Agregue otro archivo DOCX para fusionar
+    merger.join("sample2.docx");
 
-          # button loop
-          - link: "#support"
-            text: "Support"
+    // Fusionar archivos DOCX y guardar el resultado
+    merger.save("merged.docx");
+    
+    // Cargue el archivo DOCX combinado en el visor
+    try (Viewer viewer = new Viewer("merged.docx"))
+    {
+      // Establecer opciones HTML de salida, un archivo por página
+      HtmlViewOptions viewOptions =   
+      HtmlViewOptions.forEmbeddedResources("page{0}.html");
+          
+      // Renderice DOCX a HTML con recursos integrados        
+      viewer.view(viewOptions);
+    }
+    ```
 
-          # button loop
-          - link: "https://purchase.groupdocs.com/pricing/total/java"
-            text: "Precios"
-
-  right:
-      link_download: "https://releases.groupdocs.com/total"
-      link_learn: "https://docs.groupdocs.com/total/java/"
-      link_buy: "https://purchase.groupdocs.com"
-
-############################# Visión de conjunto ############################
+############################# Overview ############################
 overview:
-    enable: true
-    content: |
-      GroupDocs.Total para Java es una compilación de todas las API de Java que ofrece GroupDocs. Lo compilamos a diario para asegurarnos de que contiene las versiones más actualizadas de cada una de nuestras API de Java.
-        
-      Con GroupDocs.Total para Java, los desarrolladores pueden usar todas nuestras API con una sola licencia. Sin embargo, también puede solicitar cualquier API individual. las API que ofrecemos incluyen.
-
-############################# productos ############################
-products:
-    enable: true
-    title: "productos"
-    description: "GroupDocs.Total para Java incluye las siguientes API de manipulación de documentos para Java:"
-
-    product:
-        # product loop
-        - image: "/border/groupdocs-viewer-java.svg"
-          img_alt: "GroupDocs.Viewer for Java"
-          name: "GroupDocs.Viewer for Java"
-          content: |
-            Una poderosa API de visor de documentos que le permite mostrar más de 50 formatos de documentos en sus aplicaciones Java. El visor puede funcionar de dos formas: rasterizando documentos o convirtiéndolos a una combinación de SVG, HTML y CSS. Ambos métodos ofrecen renderizado de alta fidelidad.
-              
-            Los formatos de archivo admitidos incluyen documentos de oficina de Microsoft, Visio, Project y Outlook, PDF, AutoCAD, archivos de imagen (TIFF, JPG, BMP, GIF, TIFF, etc.) y más.
-          link: "/viewer/java/"
-
-        # product loop
-        - image: "/border/groupdocs-annotation-java.svg"
-          img_alt: "GroupDocs.Annotation for Java"
-          name: "GroupDocs.Annotation for Java"
-          content: |
-            Una API flexible que permite a los usuarios finales anotar la oficina de Microsoft, PDF y otros documentos dentro de sus aplicaciones Java. la API viene con un conjunto completo de herramientas de marcado, que permiten a los usuarios finales resaltar, tachar y comentar texto e imágenes.
-          link: "/annotation/java/"
-
-          # product loop
-        - image: "/border/groupdocs-conversion-java.svg"
-          img_alt: "GroupDocs.Conversion for Java"
-          name: "GroupDocs.Conversion for Java"
-          content: |
-            Una API de clase avanzada que le permite convertir de un lado a otro entre más de 50 formatos de documentos desde sus aplicaciones Java. la API admite todos los formatos de documentos de la oficina de Microsoft, así como PDF, HTML y formatos comunes de archivos de imagen (TIFF, JPEG, GIF, PNG, BMP). Los documentos se pueden convertir uno por uno sobre la marcha o agregarse a una cola de conversión.
-          link: "/conversion/java/"
-
-          # product loop
-        - image: "/border/groupdocs-comparison-java.svg"
-          img_alt: "GroupDocs.Comparison for Java"
-          name: "GroupDocs.Comparison for Java"
-          content: |
-            Esta API permite a los usuarios finales encontrar rápida y fácilmente las diferencias entre dos revisiones de un documento. Compara los documentos cargados y muestra las diferencias entre ellos a través de una interfaz de usuario de vista de diferencias. Las diferencias se resaltan mediante la vista de líneas rojas, similar a la función de seguimiento de cambios de Microsoft Word.
-          link: "/comparison/java/"
-
-          # product loop
-        - image: "/border/groupdocs-signature-java.svg"
-          img_alt: "GroupDocs.Signature for Java"
-          name: "GroupDocs.Signature for Java"
-          content: |
-            Con esta API, puede mejorar sin problemas sus aplicaciones con la capacidad de firma electrónica. Luego, sus usuarios pueden obtener documentos firmados electrónicamente utilizando solo un navegador web. Los registros de auditoría detallados, el cifrado SSL de 256 bits y otras características de seguridad avanzadas garantizan que los documentos firmados se mantengan privados y seguros, mientras que una interfaz de usuario similar a un asistente hace que el proceso de firma sea rápido y fácil.
-          link: "/signature/java/"
-
-          # product loop
-        - image: "/border/groupdocs-assembly-java.svg"
-          img_alt: "GroupDocs.Assembly for Java"
-          name: "GroupDocs.Assembly for Java"
-          content: |
-            GroupDocs.Assembly para el motor Java es un conjunto de API de generación de informes y automatización de documentos diseñadas para crear documentos personalizados a partir de plantillas. El motor de informes de Java ensambla de manera inteligente los datos proporcionados con el documento de plantilla definido y genera un documento de salida basado en la fuente de datos en el mismo formato que el formato del documento de plantilla.
-          link: "/assembly/java/"
-
-          # product loop
-        - image: "/border/groupdocs-metadata-java.svg"
-          img_alt: "GroupDocs.Metadata for Java"
-          name: "GroupDocs.Metadata for Java"
-          content: |
-            GroupDocs.Metadata para Java es una API de administración de metadatos de documentos diseñada para todas las operaciones básicas de metadatos, como ver, agregar, modificar y eliminar metadatos. Las API de metadatos admiten varios formatos de archivo. Puede cargar el documento de entrada y hacer que sus metadatos sean accesibles para el usuario para operaciones de metadatos.
-          link: "/metadata/java/"
-
-          # product loop
-        - image: "/border/groupdocs-search-java.svg"
-          img_alt: "GroupDocs.Search for Java"
-          name: "GroupDocs.Search for Java"
-          content: |
-            GroupDocs.Search for Java: API de búsqueda de documentos para consultas avanzadas con funciones de indexación. Utilice la API en aplicaciones Java para documentos, incluidos Word, Excel, PowerPoint y PDF para la recuperación de texto completo y mucho más.
-          link: "/search/java/"
-
-          # product loop
-        - image: "/border/groupdocs-parser-java.svg"
-          img_alt: "GroupDocs.Parser for Java"
-          name: "GroupDocs.Parser for Java"
-          content: |
-            GroupDocs.Parser para Java: un extractor de texto extensible y una API de análisis para leer o analizar el contenido del documento y las propiedades de metadatos de diferentes formatos de archivo. Funciona simplemente obteniendo el archivo como entrada y luego recupera el texto sin formato o formateado del archivo de entrada junto con las propiedades de los metadatos.
-          link: "/parser/java/"
-
-          # product loop
-        - image: "/border/groupdocs-watermark-java.svg"
-          img_alt: "GroupDocs.Watermark for Java"
-          name: "GroupDocs.Watermark for Java"
-          content: |
-            GroupDocs.Watermark para Java es una API de marca de agua de documentos para agregar, buscar y eliminar la marca de agua de múltiples formatos de archivo. API admite tipos de marca de agua de texto e imagen. Esta API puede buscar y eliminar fácilmente la marca de agua agregada por cualquier software de terceros, mientras que es difícil eliminar la marca de agua agregada con esta API por cualquier herramienta de terceros.
-          link: "/watermark/java/"
-
-          # product loop
-        - image: "/border/groupdocs-editor-java.svg"
-          img_alt: "GroupDocs.Editor for Java"
-          name: "GroupDocs.Editor for Java"
-          content: |
-            GroupDocs.Editor para Java es una API liviana para editar múltiples formatos de documentos en forma de HTML. La API del editor puede traducir el documento de origen a HTML y guardar el HTML editado en formato de documento de origen.
-          link: "/editor/java/"
-
-          # product loop
-        - image: "/border/groupdocs-merger-java.svg"
-          img_alt: "GroupDocs.Merger for Java"
-          name: "GroupDocs.Merger for Java"
-          content: |
-            GroupDocs.Merger para Java es una API de fusión y unión de documentos para combinar y organizar varios archivos en uno solo, así como para dividir, eliminar o reordenar páginas en un documento de formato compatible.
-          link: "/merger/java/"
-
-          # product loop
-        - image: "/border/groupdocs-redaction-java.svg"
-          img_alt: "GroupDocs.Redaction for Java"
-          name: "GroupDocs.Redaction for Java"
-          content: |
-            API de redacción de documentos de Java para proteger o eliminar cualquier información confidencial de documentos de Word, Excel, PowerPoint, imágenes y PDF utilizando tipos de redacción de texto, metadatos y anotaciones.
-          link: "/redaction/java/"
-
-############################# Características ############################
-features:
-    enable: true
-    title: "Advanced API Características"
-
-    feature:
-      # feature loop
-      - icon: "fas fa-file"
-        content: "Representación HTML, Imagen y PDF de documentos"
-
-      # feature loop
-      - icon: "fas fa-water"
-        content: "Marca de agua: agregue texto como marca de agua a todas las páginas e imágenes de la salida"
-
-      # feature loop
-      - icon: "fas fa-pen"
-        content: "Anotaciones nativas de Word y PDF"
-      
-      # feature loop
-      - icon: "fas fa-tools"
-        content: "Conjunto completo de herramientas de anotación"
-
-      # feature loop
-      - icon: "fas fa-envelope"
-        content: "Anotar documentos de correo electrónico, HTML y de imagen"
-
-      # feature loop
-      - icon: "fas fa-bolt"
-        content: "Conversión de documentos rápida y precisa"
-
-      # feature loop
-      - icon: "fas fa-key"
-        content: "Compara contenidos de documentos, archivos protegidos con contraseña, estilos de fuente y marcas de agua"
-
-      # feature loop
-      - icon: "fas fa-save"
-        content: "Guardar resumen de diferencias en formato DOC o DOCX"
-
-      # feature loop
-      - icon: "fas fa-upload"
-        content: "Cargar, escribir o dibujar firmas"
-
-      # feature loop
-      - icon: "fas fa-file-signature"
-        content: "Verificaciones de firma digital para todo tipo"
-
-      # feature loop
-      - icon: "fas fa-server"
-        content: "Genere documentos a partir de más de una fuente de datos"
-
-      # feature loop
-      - icon: "fas fa-eraser"
-        content: "Analice y elimine metadatos ocultos en múltiples formatos de documentos"
-
-      # feature loop
-      - icon: "fas fa-search-plus"
-        content: "Buscar y comparar metadatos"
-
-      # feature loop
-      - icon: "fas fa-file-excel"
-        content: "Exportar metadatos a Excel/CSV"
-
-      # feature loop
-      - icon: "fas fa-lock"
-        content: "Extracción de texto de archivos protegidos con contraseña"
-
-      # feature loop
-      - icon: "fas fa-search-minus"
-        content: "Buscar y eliminar marca de agua de texto/imagen"
-
-      # feature loop
-      - icon: "fas fa-file-image"
-        content: "Editar múltiples formatos de documentos"
-
-      # feature loop
-      - icon: "fas fa-file-alt"
-        content: "Combinar varios archivos en uno solo"
-
-############################# Support ############################
-support:
-    enable: true
-
-############################# Solutions ############################
-solutions:
-    enable: false
-    title: "GroupDocs.Total para Java ofrece soluciones individuales para"
-
-    solution:
-        # solution loop
-        - img_alt: "GroupDocs.Viewer for Java"
-          image: "/border/groupdocs-viewer-java.svg"
-          product: "GroupDocs.Viewer"
-          platform: "Java"
-          link: "/viewer/java/"
-        
-        # solution loop
-        - img_alt: "GroupDocs.Annotation for Java"
-          image: "/border/groupdocs-annotation-java.svg"
-          product: "GroupDocs.Annotation"
-          platform: "Java"
-          link: "/annotation/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Conversion for Java"
-          image: "/border/groupdocs-conversion-java.svg"
-          product: "GroupDocs.Conversion"
-          platform: "Java"
-          link: "/conversion/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Comparison for Java"
-          image: "/border/groupdocs-comparison-java.svg"
-          product: "GroupDocs.Comparison"
-          platform: "Java"
-          link: "/comparison/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Signature for Java"
-          image: "/border/groupdocs-signature-java.svg"
-          product: "GroupDocs.Signature"
-          platform: "Java"
-          link: "/signature/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Assembly for Java"
-          image: "/border/groupdocs-assembly-java.svg"
-          product: "GroupDocs.Assembly"
-          platform: "Java"
-          link: "/assembly/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Metadata for Java"
-          image: "/border/groupdocs-metadata-java.svg"
-          product: "GroupDocs.Metadata"
-          platform: "Java"
-          link: "/metadata/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Search for Java"
-          image: "/border/groupdocs-search-java.svg"
-          product: "GroupDocs.Search"
-          platform: "Java"
-          link: "/search/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Parser for Java"
-          image: "/border/groupdocs-parser-java.svg"
-          product: "GroupDocs.Parser"
-          platform: "Java"
-          link: "/parser/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Watermark for Java"
-          image: "/border/groupdocs-watermark-java.svg"
-          product: "GroupDocs.Watermark"
-          platform: "Java"
-          link: "/watermark/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Editor for Java"
-          image: "/border/groupdocs-editor-java.svg"
-          product: "GroupDocs.Editor"
-          platform: "Java"
-          link: "/editor/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Merger for Java"
-          image: "/border/groupdocs-merger-java.svg"
-          product: "GroupDocs.Merger"
-          platform: "Java"
-          link: "/merger/java/"
-
-        # solution loop
-        - img_alt: "GroupDocs.Redaction for Java"
-          image: "/border/groupdocs-redaction-java.svg"
-          product: "GroupDocs.Redaction"
-          platform: "Java"
-          link: "/redaction/java/"
-
-############################# Back to top ###############################
-back_to_top:
   enable: true
+  title: "GroupDocs.Total de un vistazo"
+  description: "Automatice la visualización de archivos, convierta, edite, compare, busque, agregue marcas de agua y otros flujos de trabajo en aplicaciones Java"
+  features:
+    # feature loop
+    - title: "Combine el poder de múltiples productos GroupDocs en una solución única e integral"
+      content: | 
+        Puede utilizar funciones de diferentes productos GroupDocs para crear un enfoque personalizado que satisfaga sus necesidades específicas.
+        <br><br>
+        Por ejemplo, puede convertir un archivo de Word a PDF y luego agregar una firma digital. O complete los datos de una plantilla de documento desde una base de datos, o extraiga texto de una imagen y luego tradúzcalo a otro idioma.
+        <br><br>
+        ¡Las posibilidades son infinitas!
+          
+    # feature loop
+    - title: "Domina la diversidad de formatos de archivos"
+      content: "GroupDocs.Total para Java desbloquea la compatibilidad con más de 200 formatos de archivos, lo que le permite procesar documentos de todos los tipos populares. Desde formatos de Office como Word y Excel hasta imágenes, códigos y archivos cifrados, lo tenemos cubierto."
+
+    # feature loop
+    - title: "Soporte multiplataforma"
+      content: "Libérate de las limitaciones de la plataforma. GroupDocs.Total proporciona compatibilidad multiplataforma, lo que le permite ofrecer un rendimiento óptimo y disponibilidad de la solución a los usuarios en cualquier sistema donde se pueda instalar Java."
+
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "Independencia de plataforma"
+  description: "GroupDocs.Total para Java admite los siguientes sistemas operativos, marcos y administradores de paquetes"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "Eclipse"
+      image: "eclipse"
+    # platform loop
+    - title: "IntelliJ"
+      image: "intellij"
+    # platform loop
+    - title: "Windows"
+      image: "windows"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "Maven"
+      image: "maven"
+
+
+############################# File formats ############################
+formats:
+  enable: true
+  title: "Formatos de archivo admitidos"
+  description: |
+    GroupDocs.Total para Java admite operaciones con los siguientes [formatos de archivo](https://docs.groupdocs.com/total/java/supported-document-formats/).
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### Microsoft Office, OpenDocument y formatos de texto
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM        
+        * **Project:** MPP, MPT, MPX
+        * **Outlook:** MSG, EML, EMLX, PST, OST
+        * **OneNote:** ONE
+        * **OpenDocument:** ODT, OTT, ODS, ODP, OTP, OTS, ODG
+        * **Fixed Page Layout:** PDF, TEX, XPS, OXPS
+        * **e-Books:** EPUB, MOBI, DjVu
+        * **Delimiter-Separated Values:** CSV, TSV
+    # group loop
+    - color: "blue"
+      content: |
+        ### Imágenes, gráficos y diagramas
+        * **Imágenes rasterizadas:** BMP, GIF, JPG, PNG, TIFF, WebP, DNG, DIB, Jpeg2000 family
+        * **Windows Icon:** ICO
+        * **Scalable Vector Graphics:** SVG, CDR, CMX, IGS, SVGZ        
+        * **Adobe Photoshop:** PSD, PSB        
+        * **Stereo Lithography (3D Printing):** STL        
+        * **Medical Imaging:** DICOM
+        * **Plotter Documents:** PLT, HPG
+        * **Autodesk Design Web Formats:** DWF, DWG
+        * **AutoCAD Drawing:** DWT, IFC, STL, CF2        
+      # group loop
+    - color: "red"
+      content: |
+        ### Otro        
+        * **Web:** HTML, MHT, MHTML, XML
+        * **Metafile:** WMF, EMF, CGM, EMZ, WMZ
+        * **Visio:** VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, VSDM
+        * **Project:** MPP, MPT, MPX
+        * **PostScript:** PS, EPS
+        * **Archivo:** ZIP, TAR, BZ2, GZ, RAR, RAR5
+        * **Otro:** VCF, VCARD, NUMBERS, NSF, OBJ
+        * **C/C++/C# Files:** C, CC, C# , CPP, CXX, CS, H, HH, M, MM
+        * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
+
+############################# Features ############################
+features:
+  enable: true
+  title: "GroupDocs.Total funciones"
+  description: "Administre, renderice y convierta de manera integral archivos PDF y documentos de Office"
+
+  items:
+    # feature loop
+    - icon: "viewer"
+      title: "Amplia visualización de archivos"
+      content: "Visualización completa de documentos para más de 180 formatos, incluidos HTML, imágenes y PDF."
+
+    # feature loop
+    - icon: "conversion"
+      title: "Conversión de formato"
+      content: "Conversión perfecta entre varios formatos de documentos sin herramientas externas."
+
+    # feature loop
+    - icon: "annotation"
+      title: "Anotación interactiva"
+      content: "Capacidades avanzadas de anotación para elementos de texto e imagen dentro de documentos."
+
+    # feature loop
+    - icon: "comparison"
+      title: "Comparación de contenido"
+      content: "Comparación precisa de documentos, destacando diferencias en contenido y estilo."
+
+    # feature loop
+    - icon: "signature"
+      title: "Flexibilidad de firma"
+      content: "Opciones de firma versátiles, que incluyen texto, imagen y firmas digitales."
+
+    # feature loop
+    - icon: "assembly"
+      title: "Creación de documentos basada en plantillas"
+      content: "Generación automatizada de documentos a partir de plantillas y fuentes de datos externas."
+
+    # feature loop
+    - icon: "metadata"
+      title: "Gestión de metadatos"
+      content: "Sólido acceso y manipulación de metadatos para un mejor control de documentos."
+
+    # feature loop
+    - icon: "search"
+      title: "Búsqueda Avanzada"
+      content: "Potente funcionalidad de búsqueda con soporte para algoritmos difusos y sinónimos."
+
+    # feature loop
+    - icon: "watermark"
+      title: "Control de marca de agua"
+      content: "Gestión sencilla de marcas de agua de documentos, que ofrece funciones de personalización y extracción."
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "Ejemplos de código"
+  description: "Algunos escenarios del mundo real de GroupDocs.Total para el uso de Java"
+  items:
+    # code sample loop
+    - title: "Proteja y organice contratos: aplique marcas de agua y administre metadatos en archivos DOCX"
+      content: |
+        Proteja y organice eficientemente sus documentos de Word con este ejemplo de código completo. El siguiente ejemplo le permite implementar una gestión sólida de marcas de agua y metadatos dentro del flujo de trabajo de su contrato para mejorar la seguridad y la gestión de la información. Demuestra cómo: <br><br>
+        <b>Aplicar una marca de agua personalizada:</b> Agregue una marca de agua destacada de 'Borrador de contrato' al documento para mayor claridad y protección visual. [Personalice la marca de agua](https://docs.groupdocs.com/watermark/java/adding-text-watermarks/) con opciones de fuente, color, opacidad y alineación. <br><br>
+        <b>Mejorar metadatos:</b> [Modifique los metadatos del documento](https://docs.groupdocs.com/metadata/java/working-with-metadata-in-word-processing-documents/) fácilmente para incluir detalles esenciales como autor, hora de creación, empresa, categoría, y palabras clave para mejorar la organización y la capacidad de búsqueda.
+       
+        {{< landing/code title="Java">}}
+        ```java {style=abap}  
+        import com.groupdocs.metadata.Metadata;
+        import com.groupdocs.watermark.Watermark;
+        import com.groupdocs.watermark.Watermark.Common;
+        import com.groupdocs.watermark.Options.HtmlViewOptions;
+        
+        // Cargue su documento en un marcador de agua
+        Watermarker watermarker = new Watermarker("contract.docx");
+        
+        // Establezca el texto y la fuente deseados para la marca de agua.
+        TextWatermark watermark = new TextWatermark("Contract Draft", new Font("Arial", 36));
+          
+        // Elija el color de fuente y la opacidad, rotación y alineaciones del texto.
+        watermark.setForegroundColor(Color.getRed());                                                            
+        watermark.setHorizontalAlignment(HorizontalAlignment.Center);                                            
+        watermark.setVerticalAlignment(VerticalAlignment.Center);                               
+
+        // Aplicar la marca de agua
+        watermarker.add(watermark);
+        
+        // Guarde el documento resultante.
+        watermarker.save("watermarked-contract.docx");
+        
+        Metadata metadata = new Metadata("watermarked-contract.docx");        
+        WordProcessingRootPackage root = metadata.getRootPackageGeneric();
+
+        // Actualizar las propiedades de los metadatos del documento
+        root.getDocumentProperties().setAuthor("Name Surname");
+        root.getDocumentProperties().setCreatedTime(new Date());
+        root.getDocumentProperties().setCompany("Company Name");
+        root.getDocumentProperties().setCategory("Work materials");
+        root.getDocumentProperties().setKeywords("contract, watermarked");
+
+        // Guardar documento con metadatos actualizados
+        metadata.save("contract-final.docx");                
+        ```
+        {{< /landing/code >}}
+
+    # code sample loop
+    - title: "Redacción de documentos simplificada"
+      content: |
+        <b>Guión:</b> Una gran firma legal a menudo procesa diversos documentos que contienen información confidencial del cliente que debe redactarse antes de compartirla con terceros o para su divulgación pública. Redactar manualmente esta información confidencial puede resultar tedioso, llevar mucho tiempo y estar propenso a errores humanos. Para garantizar la eficiencia, la precisión y el cumplimiento de las normas de protección de datos, la firma legal busca una solución automatizada para agilizar el proceso de redacción de documentos. 
+        
+        <br>
+
+        <b>Solución:</b>
+        GroupDocs.Total automatiza el proceso, activando la redacción al recibir un documento. Además, las [opciones flexibles](https://docs.groupdocs.com/redaction/java/text-redactions/) permiten la personalización al permitirle establecer reglas, elegir modos de redacción (por ejemplo, oscurecer, reemplazar con asteriscos) y especificar secciones o páginas específicas para su redacción. Finalmente, [resultado fácil de usar](https://docs.groupdocs.com/viewer/java/rendering-to-pdf/) genera documentos redactados en formato PDF para compartirlos y revisarlos fácilmente, mientras que la seguridad y la auditabilidad mejoradas garantizan toda la información. El proceso está documentado para garantizar el cumplimiento y la rendición de cuentas. 
+        <br><br>
+        Esta solución integral permite a los profesionales legales y otras organizaciones reducir significativamente el tiempo y los costos de redacción, minimizar el error humano y manejar constantemente información confidencial con confianza.        
+              
+        {{< landing/code title="Java">}}
+        ```java {style=abap}   
+        import com.groupdocs.redaction.Redaction;
+        import com.groupdocs.viewer.Viewer;
+        import com.groupdocs.viewer.options.HtmlViewOptions;
+
+        // Cargar documento con datos privados en el redactor 
+        Redactor redactor = new Redactor("customer-info.docx");
+        
+        // Configurar y personalizar las opciones de redacción 
+        redactor.apply(new ExactPhraseRedaction("John Smith", new ReplacementOptions("[personal]")));
+        
+        // Aplicar redacciones y guardar el resultado. 
+        redactor.save();
+
+        // Cargar archivo redactado para revisión 
+        Viewer viewer = new Viewer("customer-info.docx");
+        
+        // Configure PDF como formato de visualización deseado       
+        PdfViewOptions viewOptions = new PdfViewOptions("redacted-info.pdf");
+
+        // Guardar documento en PDF      
+        viewer.view(viewOptions);        
+        ```
+        {{< /landing/code >}}
+############################# Reviews ############################
+# reviews:
+# enable: true
+# title: "Reseñas de productos GroupDocs"
+# description: "No confíe sólo en nuestra palabra. Vea lo que otros desarrolladores dicen sobre nuestras API"
+
+# items:
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "Excelente servicio y excelentes productos. Fueron extremadamente útiles y receptivos durante el proceso de implementación de GroupDocs.Viewer para .NET, no puedo recomendarlos lo suficiente."
+#     author: "Martin Lasarga"
+#     company: "Product Manager at Axentria ECM by G.S.I."
+
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "Después de implementar y utilizar GroupDocs.Viewer para Java en el proyecto, parece estar funcionando muy bien. He probado con muchos documentos y hasta ahora todo bien. Todo lo que le he añadido se reproduce muy bien y se ve tan bien como en un visor de PDF o MS Word."
+#     author: "Mats Oustad"
+#     company: "Senior Consultant/Partner at Novanet AS"
 ---

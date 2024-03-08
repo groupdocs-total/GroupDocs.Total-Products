@@ -108,7 +108,7 @@ features:
 #     # code sample loop
 #     - title: "How to render DOCX files to PDF"
 #       content: |
-#         Render DOCX documents to PDF without Microsoft Word or other software installed. Easily load and view DOCX files within your .NET application, whether it is a web or desktop application. Here is an example of how to render a DOCX file to PDF:
+#         Render DOCX documents to PDF without Microsoft Word or other software installed. Easily load and view DOCX files within your application, whether it is a web or desktop application. Here is an example of how to render a DOCX file to PDF:
 #       samples:
 #         - language: "C#"
 #           color: "blue"

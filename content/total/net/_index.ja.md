@@ -1,306 +1,341 @@
 ---
-layout: "product"
-date: 2021-04-27T09:31:06+03:00
+############################# Static ##########################
+layout: "landing"
+date: 2023-06-29T12:38:08
 draft: false
 
+lang: ja
 product: "Total"
 product_tag: "total"
 platform: ".NET"
 platform_tag: "net"
 
-head_title: "ファイル形式の表示、変換、注釈付け、署名、自動化、透かし、編集、検索を行うC＃.NET API"
-head_description: "GroupDocs.NETドキュメント操作ライブラリとAPI。 50以上のドキュメントの生成、操作、または変換のために、APIを.NETアプリケーションに使用します."
-
-title: ".NETドキュメント自動化API"
-description: ".NETアプリケーションでドキュメントを表示、エクスポート、注釈付け、比較、署名、自動化、検索するためのAPI."
-button:
-    enable: true
-
-submenu:
-  enable: true
-  
-  left:
-      img_alt: "GroupDocs.Total for .NET"
-      image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-total-net.png"
-      product: "GroupDocs.Total"
-      platform: ".NET"
-
-  middle:
-      button:
-          - link: "#overview"
-            text: "概要"
-
-          - link: "#products"
-            text: "製品"
-
-          - link: "#features"
-            text: "特徴"
-
-          - link: "#support"
-            text: "サポート"
-
-          - link: "https://purchase.groupdocs.com/pricing/total/net"
-            text: "価格設定"
-
-  right:
-      link_download: "https://releases.groupdocs.com/total"
-      link_learn: "https://docs.groupdocs.com/total/net/"
-      link_buy: "https://purchase.groupdocs.com"
-
-overview:
-    enable: true
-    content: "GroupDocs.Total for .NETは、GroupDocsが提供するすべての.NETAPIをまとめたものです。毎日コンパイルして、各.NETドキュメント操作APIの最新バージョンが含まれていることを確認します。.
-    <br> <br> GroupDocs.Total for .NETを使用すると、開発者は1つのライセンスですべてのAPIを使用できます。ただし、個々のAPIを注文することもできます。 「」
-    製品："
-    enable: true
-    title: "製品"
-    description: "GroupDocs.Total for .NETには、次の.NET用のドキュメント操作APIが含まれています。:"
-
-    product:
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-viewer-net.png?v2"
-          img_alt: "GroupDocs.Viewer for .NET"
-          name: "GroupDocs.Viewer for .NET"
-          content: "50を超えるファイル形式のドキュメントをレンダリング、表示、表示するための強力なドキュメントビューアAPI。ドキュメント全体を包括的にレンダリングする、ドキュメントの一部を効率的にレンダリングする、または特定のページ/セル範囲をレンダリングする。サポートされているファイル形式の注釈とコメントの有無にかかわらず、個々のドキュメントレイヤーをレンダリングします。"
-          link: "/viewer/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-annotation-net.png"
-          img_alt: "GroupDocs.Annotation for .NET"
-          name: "GroupDocs.Annotation for .NET"
-          content: "領域、テキスト、ポリライン、ポイント、下線など、さまざまなタイプの注釈を作成および操作するための注釈管理API。テキストや画像の強調表示、取り消し線、タグ付け、コメントを行うための包括的なマークアップツールのセットを提供します。 。注釈付きのドキュメントを印刷するか、注釈と一緒にPDFにエクスポートします。"
-          link: "/annotation/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-conversion-net.png"
-          img_alt: "GroupDocs.Conversion for .NET"
-          name: "GroupDocs.Conversion for .NET"
-          content: "50を超えるファイル形式間でドキュメントを構成および変換するための包括的なドキュメント変換API。メールからの変換中にメールヘッダーをレンダリングする、カスタムフォントのディレクトリを設定する、透かしを設定して配置する、高度な変換方法などの機能を備えたこのAPIは、単純なファイル変換ツールよりもはるかに優れています。."
-          link: "/conversion/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-comparison-net.png"
-          img_alt: "GroupDocs.Comparison for .NET"
-          name: "GroupDocs.Comparison for .NET"
-          content: "コンテンツとテキストスタイルの両方を比較するためのドキュメント差分チェッカーAPI。比較プロセスの詳細レベルを選択します。差異分析後に変更を適用または拒否します。ファイルまたはストリームを介してドキュメントを取得します。単語の区切り文字とフォントの色を指定して、比較対象のテキストをスタイル設定します。パスワードで保護されたファイルを比較する."
-          link: "/comparison/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-signature-net.png"
-          img_alt: "GroupDocs.Signature for .NET"
-          name: "GroupDocs.Signature for .NET"
-          content: "さまざまな形式のデジタルドキュメントに署名するためのeSignature操作API。システムに存在するすべての登録済み証明書を取得します。テキスト、バーコード、画像、QRコードなど、さまざまな種類の署名を適用します。簡単で高度な検索を実行して、目的の署名を見つけます。シャドウ、配置、寸法などの署名プロパティを構成します。"
-          link: "/signature/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-assembly-net.png"
-          img_alt: "GroupDocs.Assembly for .NET"
-          name: "GroupDocs.Assembly for .NET"
-          content: "サポートされている形式のテンプレートを作成およびカスタマイズすることにより、ドキュメントの自動化とレポート生成APIを実現します。数式とシーケンシャルデータ操作を使用してデータを操作し、テンプレート構文で文字列をフォーマットし、序数、基数、アルファベット、および数値のフォーマットを設定します。変数を定義します。条件付き書式などでレポートにコンテンツを動的に挿入します。"
-          link: "/assembly/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-metadata-net.png"
-          img_alt: "GroupDocs.Metadata for .NET"
-          name: "GroupDocs.Metadata for .NET"
-          content: "さまざまなドキュメントタイプのメタデータを読み取り、編集、置換、削除するためのメタデータアクセスおよび操作API。 2つのファイルのメタデータプロパティを比較して、それらの類似点と相違点を特定します。メタデータをExcel、CSV、またはDataSetにエクスポートします。特定のファイルまたはファイルストリームのMIMEタイプを検出します。写真から位置情報を削除します。ファイルのメモリ消費を削減します。"
-          link: "/metadata/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-search-net.png"
-          img_alt: "GroupDocs.Search for .NET"
-          name: "GroupDocs.Search for .NET"
-          content: "複数のインデックスの構築とマージ、シンプル、ブール、ファジー、正規表現（Regex）、その他のクエリタイプによる検索など、基本から高度な検索機能を提供するドキュメントおよびテキスト検索API。ファイル、ドキュメント、メールに高速で信頼性の高いスマートな検索を適用します。ホモフォニック用語、同義語、日付範囲、ワイルドカード、大文字と小文字の区別に基づいて検索します。"
-          link: "/search/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-parser-net.png"
-          img_alt: "GroupDocs.Parser for .NET"
-          name: "GroupDocs.Parser for .NET"
-          content: "サポートされているファイル形式からの生の、フォーマットされた、構造化されたテキストとメタデータの抽出をサポートするテキスト抽出API。パスワードで保護されたドキュメントを解析します。高速または標準のテキスト抽出から選択します。 Markdown＆HTMLフォーマッターは、フォント、ハイパーリンク、見出し、リスト、テーブルのフォーマットをサポートしています。メールコンテナ（Exchange Webサーバー、POP3、IMAP）からデータを取得します。"
-          link: "/parser/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-watermark-net.png"
-          img_alt: "GroupDocs.Watermark for .NET"
-          name: "GroupDocs.Watermark for .NET"
-          content: "新しい透かしを適用し、サポートされている形式のドキュメントから既存の透かしを検索して削除するための電子透かしアプリケーションおよび操作API。透かしをロックして編集を制限します。既存の透かしを置き換えます。プレゼンテーションで判読できない文字を使用してテキスト透かしを保護します。プレゼンテーションの代替テキスト、回転角度などの形状プロパティを変更します."
-          link: "/watermark/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-editor-net.png"
-          img_alt: "GroupDocs.Editor for .NET"
-          name: "GroupDocs.Editor for .NET"
-          content: "サポートされているファイル形式のドキュメントを読み込み、HTMLに変換し、HTMLを外部HTMLエディタにプッシュし、HTMLを元のファイル形式に保存するDocumentEditorAPI。ドキュメントに添付されているリソースを個別に取得します。 HTMLドキュメントのCSSコンテンツを取得します。文字列コンテンツからHTMLDOMを取得し、ドキュメントに変換します。結果のドキュメントにセキュリティを適用します。"
-          link: "/editor/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-merger-net.png?v2"
-          img_alt: "GroupDocs.Merger for .NET"
-          name: "GroupDocs.Merger for .NET"
-          content: "単一のページまたはページ、スライド、または図のコレクションを結合、分割、再配置、交換、トリミング、および削除するためのドキュメントのマージおよびスプリッターAPI。既知および未知のファイル形式のパスワード保護を設定または削除します。ドキュメントの単一またはバッチをステッチまたは分割します。特定のページ、スライド、または図を削除してドキュメントをトリミングします。"
-          link: "/merger/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-redaction-net.png"
-          img_alt: "GroupDocs.Redaction for .NET"
-          name: "GroupDocs.Redaction for .NET"
-          content: "ドキュメント、ワークシート、PDFファイル、スライドから機密情報、コンテンツ、メタデータを編集、削除、非表示にするドキュメント編集およびサニタイズAPI."
-          link: "/redaction/net/"
-
-        - image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/90x90/groupdocs-classification-net.png"
-          img_alt: "GroupDocs.Classification for .NET"
-          name: "GroupDocs.Classification for .NET"
-          content: ".NETアプリケーション用の生のテキストとドキュメントの分類API。ドキュメントやIAB-2を含むいくつかの分類法を使用して、Microsoft Office Word、PDF、OpenDocument、RTF、テキストなどのコンテンツとドキュメント形式を分類します。要件に応じて一連の高度な機能を使用して、分類された結果を簡単にカスタマイズできます."
-          link: "/classification/net/"
-
-features:
-    enable: true
-    title: "高度なAPI機能"
-
-    feature:
-      - icon: "fas fa-eye"
-        content: "元の形式、またはHTML、画像、PDF形式の任意の形式のドキュメントを表示する"
-
-      - icon: "fas fa-file"
-        content: "PDF、DOCX、XLSX、PPTXドキュメントに注釈を付ける"
-
-      - icon: "fas fa-save"
-        content: "JSONファイル、データベースなどのさまざまなオブジェクトに注釈を保存するか、元のファイルとマージします"
+############################# Drop-down ############################
+supported_platforms:
+  items:
+    # supported_platforms loop
+    - title: ".NET"
+      tag: "net"
+    # supported_platforms loop
+    - title: "Java"
+      tag: "java"
       
-      - icon: "fas fa-file-export"
-        content: "注釈を個別のPDFまたはWordファイルにエクスポートする"
+############################# Head ############################
+head_title: ".NET アプリケーション用のオールインワンのドキュメント自動化ライブラリ"
+head_description: "GroupDocs.Total for .NET は、.NET 開発者向けのオールインワンのドキュメント自動化 API スイートで、PDF、Word、Excel、画像、HTML、図などを含むさまざまなドキュメント形式を操作するための包括的なツール セットを提供します。 。"
 
-      - icon: "fas fa-bolt"
-        content: "最速のオンザフライ変換API"
+############################# Header ##########################
+title: ".NET アプリでドキュメントの自動化を効率化<br>"
+description: "ドキュメントの自動化を解除: 200 を超える形式間で簡単に変換、表示、比較、編集、署名できます。"
+words:
+  for: "for"
 
-      - icon: "fas fa-clone"
-        content: "複数のファイルのバッチ変換"
+actions:
+  main: "無料の NuGet ダウンロード"
+  main_link: "https://www.nuget.org/packages/GroupDocs.Total"
+  alt: "ライセンス"
+  alt_link: "https://purchase.groupdocs.com/pricing/total/net"
+  title: "始める準備はできていますか?"
+  description: "GroupDocs.Total の機能を無料で試すか、ライセンスをリクエストしてください"
 
-      - icon: "fas fa-file-code"
-        content: "単語や段落の違いについてコンテンツを比較します"
+release:
+  title: "バージョン {0} がリリースされました"
+  notes: "新機能を見る"
+  downloads: "ダウンロード"
+  link: "https://releases.groupdocs.com/total/net/release-notes/latest/"
 
-      - icon: "fas fa-file-contract"
-        content: "比較APIを使用しながら相違点の要約を分離する"
+code:
+  title: "C# で Word ファイルを結合して表示する"
+  more: "他の例"
+  more_link: "https://github.com/groupdocs-total/GroupDocs.Total-for-.NET"
+  install: "dotnet add package GroupDocs.Total"
+  content: |
+    ```csharp {style=abap} 
+    // ソースDOCXファイルをロードします
+    using (Merger merger = new Merger("sample1.docx"))
+    {
+        // マージする別の DOCX ファイルを追加します
+        merger.Join("sample2.docx");
 
-      - icon: "fas fa-signature"
-        content: "複数の署名プロパティ"
+        // DOCX ファイルをマージし、結果を保存します
+        merger.Save("merged.docx");
+    }
 
-      - icon: "fas fa-file-signature"
-        content: "最初、最後、偶数、奇数などの任意のページに署名を設定します"
-
-      - icon: "fas fa-server"
-        content: "複数のデータソースからマルチフォーマットドキュメントを生成する"
-
-      - icon: "fas fa-key"
-        content: "キーと値のペアの形式での組み込みおよびカスタムメタデータ操作"
-
-      - icon: "fas fa-file-download"
-        content: "サポートされているファイル形式で添付されたメタデータをエクスポートする"
-
-      - icon: "fab fa-searchengin"
-        content: "複数の基本および高度な検索方法"
-
-      - icon: "fas fa-search"
-        content: "ファジーおよび同義語検索"
-
-      - icon: "fas fa-search-minus"
-        content: "テキスト/画像の透かしを検索して削除する"
-
-      - icon: "fas fa-file-image"
-        content: "ドキュメント内の画像に透かしを追加する"
-
-      - icon: "fas fa-file-alt"
-        content: "構造化され強調表示されたテキストを抽出する"
-      
-      - icon: "fas fa-file-archive"
-        content: "zipアーカイブなどの他のファイルを含むコンテナからテキストを取得します"
-
-      - icon: "fas fa-file-invoice"
-        content: "直接および逆のドキュメント変換"
-
-      - icon: "fas fa-edit"
-        content: "複数のドキュメント形式を編集する"
-
-support:
-    enable: true
-
-solutions:
-    enable: true
-    title: "GroupDocs.Total for .NETは、"
-
-    solution:
-        - img_alt: "GroupDocs.Viewer for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-viewer-net.png"
-          product: "GroupDocs.Viewer"
-          platform: ".NET"
-          link: "/viewer/net/"
+    // マージされた DOCX ファイルをビューアにロードします
+    using (var viewer = new Viewer("merged.docx"))
+    {
+        // 出力 HTML オプションを設定します (ページごとに 1 つのファイル)
+        var viewOptions = 
+        HtmlViewOptions.ForEmbeddedResources("page{0}.html");
         
-        - img_alt: "GroupDocs.Annotation for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-annotation-net.png"
-          product: "GroupDocs.Annotation"
-          platform: ".NET"
-          link: "/annotation/net/"
+        // 埋め込みリソースを使用して DOCX を HTML にレンダリングします        
+        viewer.View(viewOptions);
+    }
+    ```
 
-        - img_alt: "GroupDocs.Conversion for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-conversion-net.png"
-          product: "GroupDocs.Conversion"
-          platform: ".NET"
-          link: "/conversion/net/"
-
-        - img_alt: "GroupDocs.Comparison for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-comparison-net.png"
-          product: "GroupDocs.Comparison"
-          platform: ".NET"
-          link: "/comparison/net/"
-
-        - img_alt: "GroupDocs.Signature for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-signature-net.png"
-          product: "GroupDocs.Signature"
-          platform: ".NET"
-          link: "/signature/net/"
-
-        - img_alt: "GroupDocs.Assembly for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-assembly-net.png"
-          product: "GroupDocs.Assembly"
-          platform: ".NET"
-          link: "/assembly/net/"
-
-        - img_alt: "GroupDocs.Metadata for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-metadata-net.png"
-          product: "GroupDocs.Metadata"
-          platform: ".NET"
-          link: "/metadata/net/"
-
-        - img_alt: "GroupDocs.Search for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-search-net.png"
-          product: "GroupDocs.Search"
-          platform: ".NET"
-          link: "/search/net/"
-
-        - img_alt: "GroupDocs.Parser for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-parser-net.png"
-          product: "GroupDocs.Parser"
-          platform: ".NET"
-          link: "/parser/net/"
-
-        - img_alt: "GroupDocs.Watermark for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-watermark-net.png"
-          product: "GroupDocs.Watermark"
-          platform: ".NET"
-          link: "/watermark/net/"
-
-        - img_alt: "GroupDocs.Editor for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-editor-net.png"
-          product: "GroupDocs.Editor"
-          platform: ".NET"
-          link: "/editor/net/"
-
-        - img_alt: "GroupDocs.Merger for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-merger-net.png"
-          product: "GroupDocs.Merger"
-          platform: ".NET"
-          link: "/merger/net/"
-
-        - img_alt: "GroupDocs.Redaction for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-redaction-net.png"
-          product: "GroupDocs.Redaction"
-          platform: ".NET"
-          link: "/redaction/net/"
-
-        - img_alt: "GroupDocs.Classification for .NET"
-          image: "https://www.groupdocs.cloud/templates/groupdocs/images/product-logos/groupdocs-classification-net.png"
-          product: "GroupDocs.Classification"
-          platform: ".NET"
-          link: "/classification/net/"
-
-back_to_top:
+############################# Overview ############################
+overview:
   enable: true
+  title: "GroupDocs.Total の概要"
+  description: ".NET アプリケーションでのファイルの表示、変換、編集、比較、検索、透かし入れなどのワークフローを自動化します。"
+  features:
+    # feature loop
+    - title: "複数の GroupDocs 製品の機能を 1 つの包括的なソリューションに統合します"
+      content: | 
+        さまざまな GroupDocs 製品の機能を使用して、特定のニーズを満たすカスタマイズされたアプローチを作成できます。
+        <br><br>
+        たとえば、Word ファイルを PDF に変換し、デジタル署名を追加できます。または、データベースからドキュメント テンプレート データを入力するか、画像からテキストを抽出して別の言語に翻訳します。
+        <br><br>
+        可能性は無限大！
+          
+    # feature loop
+    - title: "多様なファイル形式をマスターする"
+      content: "GroupDocs.Total for .NET は、200 を超えるファイル形式との互換性を解放し、一般的なすべての種類のドキュメントを処理できるようにします。 Word や Excel などのオフィス形式から、画像、コード、暗号化されたファイルまで、あらゆるものをカバーします。"
+
+    # feature loop
+    - title: "クロスプラットフォームのサポート"
+      content: "プラットフォームの制限から解放されます。 GroupDocs.Total はクロスプラットフォーム互換性を提供し、.NET がインストールできるあらゆるシステム上のユーザーに最適なパフォーマンスとソリューションの可用性を提供できます。"
+
+############################# Platforms ############################
+platforms:
+  enable: true
+  title: "プラットフォームの独立性"
+  description: "GroupDocs.Total for .NET は、次のオペレーティング システム、フレームワーク、およびパッケージ マネージャーをサポートします。"
+  items:
+    # platform loop
+    - title: "Amazon"
+      image: "amazon"
+    # platform loop
+    - title: "Docker"
+      image: "docker"
+    # platform loop
+    - title: "Azure"
+      image: "azure"
+    # platform loop
+    - title: "VS Code"
+      image: "vs_code"
+    # platform loop
+    - title: "ReSharper"
+      image: "resharper"
+    # platform loop
+    - title: "macOS"
+      image: "finder"
+    # platform loop
+    - title: "Linux"
+      image: "linux"
+    # platform loop
+    - title: "NuGet"
+      image: "nuget"
+
+############################# File formats ############################
+formats:
+  enable: true
+  title: "サポートされているファイル形式"
+  description: |
+    GroupDocs.Total for .NET は、次の [ファイル形式](https://docs.groupdocs.com/total/net/supported-document-formats/) での操作をサポートします。
+  groups:
+    # group loop
+    - color: "green"
+      content: |
+        ### Microsoft Office、OpenDocument、およびテキスト形式
+        * **Word:** DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF, TXT
+        * **Excel:** XLS, XLSX, XLSM, XLSB, XLTM, XLT, XLTM, XLTX
+        * **PowerPoint:** PPT, PPTX, PPS, PPSX, PPSM, POT, POTM, POTX, PPTM        
+        * **Project:** MPP, MPT, MPX
+        * **Outlook:** MSG, EML, EMLX, PST, OST
+        * **OneNote:** ONE
+        * **OpenDocument:** ODT, OTT, ODS, ODP, OTP, OTS, ODG
+        * **Fixed Page Layout:** PDF, TEX, XPS, OXPS
+        * **e-Books:** EPUB, MOBI, DjVu
+        * **Delimiter-Separated Values:** CSV, TSV
+    # group loop
+    - color: "blue"
+      content: |
+        ### 画像、グラフィック、図表
+        * **ラスター画像:** BMP, GIF, JPG, PNG, TIFF, WebP, DNG, DIB, Jpeg2000 family
+        * **Windows Icon:** ICO
+        * **Scalable Vector Graphics:** SVG, CDR, CMX, IGS, SVGZ        
+        * **Adobe Photoshop:** PSD, PSB        
+        * **Stereo Lithography (3D Printing):** STL        
+        * **Medical Imaging:** DICOM
+        * **Plotter Documents:** PLT, HPG
+        * **Autodesk Design Web Formats:** DWF, DWG
+        * **AutoCAD Drawing:** DWT, IFC, STL, CF2        
+      # group loop
+    - color: "red"
+      content: |
+        ### 他の        
+        * **ウェブ:** HTML, MHT, MHTML, XML
+        * **Metafile:** WMF, EMF, CGM, EMZ, WMZ
+        * **Visio:** VSD, VDX, VSS, VSSX, VSX, VST, VSTX, VTX, VSDX, VDW, VSTM, VSSM, VSDM
+        * **Project:** MPP, MPT, MPX
+        * **PostScript:** PS, EPS
+        * **アーカイブ:** ZIP, TAR, BZ2, GZ, RAR, RAR5
+        * **他の:** VCF, VCARD, NUMBERS, NSF, OBJ
+        * **C/C++/C# Files:** C, CC, C# , CPP, CXX, CS, H, HH, M, MM
+        * **Java/JavaScript Files:** JAVA, JS, JSON, PROPERTIES
+
+############################# Features ############################
+features:
+  enable: true
+  title: "GroupDocs.Total 総合機能"
+  description: "PDF と Office ドキュメントを包括的に管理、レンダリング、変換します"
+
+  items:
+    # feature loop
+    - icon: "viewer"
+      title: "広範なファイル表示"
+      content: "HTML、画像、PDF を含む 180 を超える形式の包括的なドキュメント表示。"
+
+    # feature loop
+    - icon: "conversion"
+      title: "フォーマット変換"
+      content: "外部ツールを使用せずに、さまざまなドキュメント形式間でシームレスに変換します。"
+
+    # feature loop
+    - icon: "annotation"
+      title: "インタラクティブな注釈"
+      content: "ドキュメント内のテキストおよび画像要素に対する高度な注釈機能。"
+
+    # feature loop
+    - icon: "comparison"
+      title: "内容の比較"
+      content: "文書を正確に比較し、内容とスタイルの違いを強調します。"
+
+    # feature loop
+    - icon: "signature"
+      title: "署名の柔軟性"
+      content: "テキスト、画像、デジタル署名などの多彩な署名オプション。"
+
+    # feature loop
+    - icon: "assembly"
+      title: "テンプレートベースのドキュメント作成"
+      content: "テンプレートと外部データ ソースからのドキュメントの自動生成。"
+
+    # feature loop
+    - icon: "metadata"
+      title: "メタデータ管理"
+      content: "強化されたドキュメント管理のための堅牢なメタデータ アクセスと操作。"
+
+    # feature loop
+    - icon: "search"
+      title: "高度な検索"
+      content: "ファジーアルゴリズムと同義語アルゴリズムをサポートする強力な検索機能。"
+
+    # feature loop
+    - icon: "watermark"
+      title: "ウォーターマーク制御"
+      content: "文書の透かしを簡単に管理し、カスタマイズ機能と抽出機能を提供します。"
+
+############################# Code samples ############################
+code_samples:
+  enable: true
+  title: "コードサンプル"
+  description: ".NET での GroupDocs.Total の使用に関する実際のシナリオ"
+  items:
+    # code sample loop
+    - title: "契約の保護と整理: ウォーターマークを適用し、DOCX ファイル内のメタデータを管理します"
+      content: |
+        この包括的なコード例を使用して、Word 文書を効率的に保護および整理します。以下のサンプルを使用すると、契約ワークフロー内に堅牢な透かしとメタデータ管理を実装して、セキュリティと情報管理を強化できます。以下の方法を示します。 <br><br>
+        <b>カスタム透かしを適用する:</b> 視覚的な明瞭さと保護のために、文書に目立つ「契約草案」の透かしを追加します。 [ウォーターマークをカスタマイズする](https://docs.groupdocs.com/watermark/net/basic-usage/customize/) フォント、色、不透明度、配置のオプションを使用します。 <br><br>
+        <b>メタデータの強化:</b> 簡単に[ドキュメントのメタデータを変更](https://docs.groupdocs.com/metadata/net/working-with-metadata-in-wordprocessing-documents/)して、作成者、作成時間、会社、カテゴリ、キーワードなどの重要な詳細を含めることができます。整理と検索性が向上します。
+       
+        {{< landing/code title="C#">}}
+        ```csharp {style=abap}  
+        using GroupDocs.Metadata;
+        using GroupDocs.Watermark;
+        using GroupDocs.Watermark.Common;
+        using GroupDocs.Watermark.Watermarks;
+        
+        // 文書をウォーターマーカーにロードします
+        using (Watermarker watermarker = new Watermarker("contract.docx"))
+        {
+            // ウォーターマークに必要なテキストとフォントを設定します
+            TextWatermark watermark = new TextWatermark("Contract Draft", new Font("Arial", 60, FontStyle.Bold));
+            
+            // フォントの色とテキストの不透明度、回転と配置を選択します
+            watermark.ForegroundColor = Color.DarkGreen;
+            watermark.Opacity = 0.5;
+            watermark.HorizontalAlignment = HorizontalAlignment.Center;
+            watermark.VerticalAlignment = VerticalAlignment.Center;
+            
+            // 透かしを適用する
+            watermarker.Add(watermark);
+            
+            // 結果のドキュメントを保存する
+            watermarker.Save("watermarked-contract.docx");
+        }
+
+        using (Metadata metadata = new Metadata("watermarked-contract.docx"))
+        {
+          var root = metadata.GetRootPackage<WordProcessingRootPackage>();
+
+          // ドキュメントのメタデータのプロパティを更新する
+          root.DocumentProperties.Author = "Name Surname";
+          root.DocumentProperties.CreatedTime = DateTime.Now;
+          root.DocumentProperties.Company = "Company Name";
+          root.DocumentProperties.Category = "Work materials";
+          root.DocumentProperties.Keywords = "contract, watermarked";
+
+          // 更新されたメタデータを含むドキュメントを保存する
+          metadata.Save("contract-final.docx");
+        }        
+        ```
+        {{< /landing/code >}}
+    # code sample loop
+    - title: "合理化されたドキュメントの編集"
+      content: |
+        <b>シナリオ:</b> 大手法律事務所では、顧客の機密情報を含むさまざまな文書を頻繁に処理しており、第三者と共有したり一般に公開したりする前に編集する必要があります。この機密情報を手動で編集するのは面倒で時間がかかり、人的ミスが発生しやすい可能性があります。効率性、正確性、データ保護規制への準拠を確保するために、この法律事務所は文書編集プロセスを合理化する自動化ソリューションを求めています。 
+        
+        <br>
+
+        <b>解決:</b>
+        GroupDocs.Total はプロセスを自動化し、ドキュメントの受信時に編集をトリガーします。さらに、[柔軟なオプション](https://docs.groupdocs.com/redaction/net/text-redactions/) により、ルールを設定し、編集モード (ブラックアウト、アスタリスクで置換など) を選択し、指定することができるため、カスタマイズが可能になります。編集対象の特定のセクションまたはページ。最後に、[ユーザーフレンドリーな出力](https://docs.groupdocs.com/viewer/net/rendering-to-pdf/) は、共有とレビューが容易なように編集されたドキュメントを PDF 形式で生成します。また、強化されたセキュリティと監査可能性により、セキュリティ全体が保証されます。プロセスはコンプライアンスと説明責任のために文書化されます。 
+        <br><br>
+        この包括的なソリューションにより、法律専門家やその他の組織は編集時間とコストを大幅に削減し、人的エラーを最小限に抑え、機密情報を一貫して自信を持って処理できるようになります。        
+              
+        {{< landing/code title="C#">}}
+        ```csharp {style=abap}   
+        using GroupDocs.Redaction;
+        using GroupDocs.Viewer;
+        using GroupDocs.Viewer.Options;
+
+        // プライベートデータを含むドキュメントをリダクターにロードする 
+        using (Redactor redactor = new Redactor("customer-info.docx"))
+        {
+          // 編集オプションの設定とカスタマイズ 
+          redactor.Apply(new ExactPhraseRedaction("John Smith", new ReplacementOptions("[personal]")));
+          // 墨消しを適用して結果を保存する 
+          redactor.Save();
+        }
+
+        // 編集したファイルをレビューのためにロードする 
+        using (var viewer = new Viewer("customer-info.docx"))
+        {
+          // PDFを希望の表示形式に設定します       
+          var viewOptions = new PdfViewOptions("redacted-info.pdf");
+
+          // 文書を PDF に保存      
+          viewer.View(viewOptions);
+        }
+        ```
+        {{< /landing/code >}}
+############################# Reviews ############################
+# reviews:
+# enable: true
+# title: "GroupDocs 製品のレビュー"
+# description: "私たちの言葉をそのまま鵜呑みにしないでください。他の開発者の API についての意見をご覧ください"
+
+# items:
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "優れたサービスと優れた製品。これらは、GroupDocs.Viewer for .NET の実装プロセス中に非常に役に立ち、迅速に対応してくれましたが、あまりお勧めできません。"
+#     author: "Martin Lasarga"
+#     company: "Product Manager at Axentria ECM by G.S.I."
+
+#   # review loop
+#   - title: "GroupDocs.Total"
+#     content: "プロジェクトに Java 用 GroupDocs.Viewer を実装して使用した後、非常にうまく動作しているように見えます。多くのドキュメントを使用してテストしましたが、これまでのところ良好です。私が投げたものはすべてうまくレンダリングされ、PDF ビューアや MS Word と同じくらい見栄えがよくなります。"
+#     author: "Mats Oustad"
+#     company: "Senior Consultant/Partner at Novanet AS"
 ---
